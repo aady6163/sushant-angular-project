@@ -113,6 +113,8 @@ import { PaidCoursesSinglePageComponent } from './components/pages/paid-courses-
 import { StickySidebarCoursesSinglePageComponent } from './components/pages/sticky-sidebar-courses-single-page/sticky-sidebar-courses-single-page.component';
 import { RelatedCoursesComponent } from './components/common/related-courses/related-courses.component';
 import { BecomeAPartnerPageComponent } from './components/pages/become-a-partner-page/become-a-partner-page.component';
+import { QuestionBanksComponent } from './components/pages/question-banks/question-banks.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
     declarations: [
@@ -129,6 +131,7 @@ import { BecomeAPartnerPageComponent } from './components/pages/become-a-partner
         NotFoundComponent,
         FooterComponent,
         EsdBannerComponent,
+      QuestionBanksComponent,
         FunfactsComponent,
         FreeTrialComponent,
         StoriesComponent,
@@ -230,7 +233,9 @@ import { BecomeAPartnerPageComponent } from './components/pages/become-a-partner
         MdbCollapseModule,
         MdbAccordionModule,
         NgxScrollTopModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        DragDropModule,
+ 
     ],
     providers: [],
     bootstrap: [AppComponent]

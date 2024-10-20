@@ -1,0 +1,113 @@
+<div class="quiz-container mt-5">
+  <div class="header">
+    <h3>JavaScript Quiz with Multiple Question Types</h3>
+    <span class="time-left">Time Left: <strong>19</strong></span>
+  </div>
+
+  <div class="question-buttons mt-3">
+    <div class="btn-group">
+      <button
+        *ngFor="let status of questionStatuses; let i = index"
+        class="btn"
+        [ngClass]="{
+          'bg-success text-white': status === 'submitted',
+          'bg-warning text-white': status === 'review',
+          'bg-danger text-white': status === 'skipped',
+          'bg-secondary text-white': i === currentQuestionIndex,
+          'bg-light text-white': status === 'pending' && i !== currentQuestionIndex,
+          'bg-grey text-white': i === currentQuestionIndex && status === 'pending'
+        }"
+        (click)="goToQuestion(i)"
+      >
+        {{ i + 1 }}
+      </button>
+    </div>
+  </div>
+
+  <div class="question-card mt-4">
+    <div class="question-header">
+      <span>Question: {{ currentQuestionIndex + 1 }} / {{ questions.length }}</span>
+      <span class="points">(Points: 1)</span>
+    </div>
+
+    <ng-container *ngIf="currentMCQ">
+      <h5 class="question-text">{{ currentMCQ.question }}</h5>
+
+      <div class="options-list">
+        <div class="form-check" *ngFor="let option of currentMCQ.options; let i = index">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="answer"
+            [id]="'option' + i"
+            (change)="selectAnswer(i)"
+          />
+          <label class="form-check-label" [for]="'option' + i">{{ option }}</label>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="currentDragDrop">
+      <h5 class="question-text">{{ currentDragDrop.question }}</h5>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4>Tasks</h4>
+          <div *ngFor="let task of currentDragDrop.tasks" class="mb-3">
+            <div class="task font-weight-bold">{{ task.id }}. {{ task.text }}</div>
+            <div
+              class="answer-box border p-2"
+              (drop)="onDrop($event, task.id)"
+              (dragover)="allowDrop($event)"
+            >
+              <span *ngIf="currentDragDrop.matchedAnswers[task.id]">
+                {{ currentDragDrop.matchedAnswers[task.id] }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Answers</h4>
+          <div
+            *ngFor="let answer of currentDragDrop.answers"
+            class="answer bg-light p-2 mb-2"
+            draggable="true"
+            (dragstart)="onDragStart($event, answer.text)"
+          >
+            {{ answer.text }}
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <div class="navigation-buttons mt-4">
+      <button class="btn btn-primary" (click)="submitAndNext()">Submit & Next</button>
+      <button class="btn btn-info" (click)="markForReview()">Mark for Review & Next</button>
+      <button class="btn btn-secondary" (click)="skipQuestion()">Skip</button>
+    </div>
+
+    <div class="navigation-buttons-2 mt-3">
+      <button class="btn btn-secondary" (click)="goPrevious()" [disabled]="currentQuestionIndex === 0">
+        Previous
+      </button>
+      <button class="btn btn-secondary" (click)="goNext()" [disabled]="currentQuestionIndex === questions.length - 1">
+        Next
+      </button>
+    </div>
+  </div>
+
+  <div class="footer mt-3">
+
+    <div class="legend">
+      <span class="legend-item submitted bg-success text-white px-2 py-1 rounded">Submitted</span>
+      <span class="legend-item mark-review bg-warning text-white px-2 py-1 rounded">Marked for Review</span>
+      <span class="legend-item skip-question bg-danger text-white px-2 py-1 rounded">Skipped</span>
+      <span class="legend-item selected bg-secondary text-white px-2 py-1 rounded">Selected</span>
+      <span class="legend-item pending bg-light text-black px-2 py-1 rounded">Pending</span>
+    </div>
+
+
+    <button class="btn btn-warning mt-2" (click)="finishTest()">Finish Test</button>
+  </div>
+</div>
