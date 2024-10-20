@@ -6,15 +6,15 @@
         <form (submit)="handleFormSubmit($event)">
           <h2>Login</h2>
           <div class="sign-with-g">
-            <a><img src="assets/img/google.png" class="google-logo" /> Login with Email</a>
+            <a><img src="assets/img/google.png" class="google-logo" /> Login with Google</a>
           </div>
           <div class="form-group">
             <label for="loginUsername">Username</label>
-            <input id="loginUsername" type="text" placeholder="Username" />
+            <input id="loginUsername" type="text" placeholder="Username"/>
           </div>
           <div class="form-group">
             <label for="loginPassword">Password</label>
-            <input id="loginPassword" type="password" placeholder="Password" />
+            <input id="loginPassword" type="password" placeholder="Password"/>
           </div>
           <p class="Forgot-pass"><a class="anchor_tag" routerLink="/forgot-password">Forgot Password ?</a></p>
           <button class="default-btn" type="submit">Login</button>
@@ -38,22 +38,22 @@
           <p class="or-text">Or</p>
           <div class="form-group">
             <label for="registerUsername">Username</label>
-            <input id="registerUsername" type="text" placeholder="Username" />
+            <input id="registerUsername" type="text" placeholder="Username"/>
           </div>
           <div class="form-group">
             <label for="registerEmail">Email Address</label>
-            <input id="registerEmail" type="email" placeholder="Email Address" />
+            <input id="registerEmail" type="email" placeholder="Email Address"/>
           </div>
           <div class="form-group">
             <label for="registerPassword">Create Password</label>
-            <input id="registerPassword" type="password" placeholder="Create Password" />
+            <input id="registerPassword" type="password" placeholder="Create Password"/>
           </div>
           <div class="form-group">
             <label for="confirmPassword">Confirm Password</label>
-            <input id="confirmPassword" type="password" placeholder="Confirm Password" />
+            <input id="confirmPassword" type="password" placeholder="Confirm Password"/>
           </div>
           <div>
-            <input class="facultyCheckbox" type="checkbox" id="facultyCheckbox" (change)="toggleTextarea($event)" />
+            <input class="facultyCheckbox" type="checkbox" id="facultyCheckbox" (change)="toggleTextarea($event)"/>
             <label for="facultyCheckbox">Register as Faculty</label>
           </div>
           <textarea class="facultytextarea" *ngIf="isFaculty" placeholder="Enter..."></textarea>
