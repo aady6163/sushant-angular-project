@@ -1,0 +1,88 @@
+<div
+    class="footer-area"
+    [ngClass]="{'bg-black': router.url === '/vendor-certification-etraining' || router.url === '/distance-learning' || router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <div
+                    class="single-footer-widget"
+                    [ngClass]="{'white-color': router.url === '/vendor-certification-etraining' || router.url === '/distance-learning' || router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+                >
+                    <a
+                        routerLink="/"
+                        class="logo d-inline-block"
+                        [ngClass]="{'d-none': router.url === '/vendor-certification-etraining' || router.url === '/distance-learning' || router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+                    >
+                        <img style="max-width: 50%;" src="assets/img/logo.png" alt="logo">
+                    </a>
+                    <a
+                        routerLink="/"
+                        class="logo d-none"
+                        [ngClass]="{'d-inline-block': router.url === '/vendor-certification-etraining' || router.url === '/distance-learning' || router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+                    >
+                        <img src="assets/img/white-logo.png" alt="logo">
+                    </a>
+                    <p>BillionLearners is an innovative & comprehensive knowledge & information management platform designed to bridge the gap between passionate instructors and eager learners. It serves as a valuable resource for educational institutions, coaches, consultants, organizations, and HR professionals, enabling them to create and share educational content with a global community of learners. <span class="text-info">Read More...</span></p>
+                    <ul class="social">
+                        <li><a class="bg-info" href="https://www.facebook.com/people/Billion-Learners/61560717609560/" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                        <li><a class="twitter" href="https://x.com/billionlea21877" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                        <li><a class="bg-danger" href="https://www.instagram.com/billionlearners/" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                        <li><a class="bg-info" href="https://www.linkedin.com/company/billion-learners/" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                        <li><a class="bg-danger" href="https://www.youtube.com/channel/UC0FH0KDFz7ZidHXhI-XWrug" target="_blank"><i class='bx bxl-youtube'></i></a></li>
+                        <li><a class="bg-success" href="https://www.youtube.com/channel/UC0FH0KDFz7ZidHXhI-XWrug" target="_blank"><i class='bx bxl-whatsapp'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div
+                    class="single-footer-widget pl-1"
+                    [ngClass]="{'white-color': router.url === '/vendor-certification-etraining' || router.url === '/distance-learning' || router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+                >
+                    <h3>About Us</h3>
+                    <ul class="custom-links">
+                        <li class="first-footer"><a routerLink="/about-us">About Us</a></li>
+                        <li><a routerLink="/instructors">Our Faculties</a></li>
+                        <li><a routerLink="/terms-conditions">Term & Condition</a></li>
+                        <li><a routerLink="/privacy-policy">Privacy Policy</a></li>
+                        <li><a routerLink="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div
+                    class="single-footer-widget"
+                    [ngClass]="{'white-color': router.url === '/vendor-certification-etraining' || router.url === '/distance-learning' || router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+                >
+                    <!-- <h3>Contact Us</h3> -->
+                    <ul class="footer-contact-info">
+                        <li><span>Corporate Office</span><br> HIG 19, (7 Acear) OSHB, C.S. Pur Bhubaneswar Khordha. Orissa-751016, India</li>
+                        <li><span>Email</span><br> <a href="mailto:hello&#64;edla.com">contact&#64;billionlearners.com</a></li>
+                        <li><span>Phone</span><br><a href="tel:8766699764">+91 8766699764</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div
+            class="copyright-area"
+            [ngClass]="{'white-color': router.url === '/vendor-certification-etraining' || router.url === '/distance-learning' || router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+        >
+            <span>Copyright © Designed & Developed by BillionLearners (AMSK EdTech Pvt. Ltd) 2024</span><br>
+            <span class="register-address">Registered Office: HIG 19, (7 Acear) OSHB, C.S. Pur Bhubaneswar Khordha. Orissa-751016, India</span>
+        </div>
+    </div>
+    <div
+        class="shape7"
+        [ngClass]="{'d-none': router.url === '/vendor-certification-etraining' || router.url === '/distance-learning' || router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+    >
+        <img src="assets/img/shape/shape7.png" alt="shape">
+    </div>
+    <div
+        class="lines d-none"
+        [ngClass]="{'d-block': router.url === '/vendor-certification-etraining' || router.url === '/distance-learning' || router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+    >
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>

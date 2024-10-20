@@ -1,0 +1,567 @@
+.stories-area {
+    position: relative;
+    z-index: 1;
+
+    .shape5 {
+        bottom: -85px;
+        left: auto;
+        top: auto;
+        right: 0;
+    }
+    .shape3 {
+        bottom: -80px;
+        left: 7%;
+
+        &.style-two {
+            bottom: 9%;
+            left: 3%;
+        }
+    }
+    .shape6 {
+        left: auto;
+        right: 7%;
+        top: 15%;
+    }
+    .shape4 {
+        bottom: 15%;
+        right: 32%;
+        top: auto;
+
+        &.style-two {
+            z-index: 1;
+            bottom: 25%;
+            right: 19.5%;
+        }
+    }
+    .shape2 {
+        left: 5%;
+        top: 20%;
+
+        &.style-two {
+            left: auto;
+            right: 10%;
+            top: -15%;
+        }
+    }
+}
+.stories-image {
+    border-radius: 0 115px 0 0;
+    position: relative;
+    z-index: 1;
+    padding: {
+        left: 100px;
+        right: 100px;
+    };
+    img {
+        border-radius: 0 115px 0 0;
+    }
+    &::before {
+        top: 0;
+        right: 45px;
+        content: '';
+        width: 287px;
+        height: 186px;
+        position: absolute;
+        background: {
+            // image: url(../../../../assets/img/shape/dot-shape1.png);
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+    &::after {
+        z-index: -1;
+        right: 45px;
+        content: '';
+        width: 231px;
+        bottom: -50px;
+        height: 212px;
+        position: absolute;
+        background: {
+            // image: url(../../../../assets/img/shape/cross-line.png);
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+}
+.stories-content {
+    h2 {
+        margin-bottom: 25px;
+        font-size: 38px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .default-btn {
+        margin-top: 30px;
+    }
+}
+.stories-img {
+    border-radius: 115px 0 0 0;
+    position: relative;
+    z-index: 1;
+    padding: {
+        left: 100px;
+        right: 100px;
+    };
+    img {
+        border-radius: 115px 0 0 0;
+    }
+    &::before {
+        top: 0;
+        left: 45px;
+        content: '';
+        width: 287px;
+        height: 186px;
+        position: absolute;
+        animation: moveleftbounce 5s linear infinite;
+        background: {
+            // image: url(../../../../assets/img/shape/dot-shape1.png);
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+    &::after {
+        z-index: -1;
+        left: 60px;
+        content: '';
+        width: 231px;
+        bottom: -40px;
+        height: 212px;
+        position: absolute;
+        transform: scaleX(-1);
+        background: {
+            image: url(../../../../assets/img/shape/cross-line.png);
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+}
+.kc-stories-content {
+    padding-right: 50px;
+
+    h2 {
+        font-size: 38px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .box {
+        padding: 25px;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+
+        p {
+            font-size: 22px;
+            color: var(--blackColor);
+        }
+    }
+    .stories-btn {
+        margin-top: 30px;
+    }
+}
+.kc-stories-image {
+    position: relative;
+    z-index: 1;
+    padding: {
+        right: 35px;
+        bottom: 35px;
+    };
+    img {
+        border-radius: 5px;
+    }
+    .stories-shape {
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        position: absolute;
+    }
+}
+.rt-opportunities-area {
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    margin: {
+        left: 30px;
+        right: 30px;
+    };
+}
+.rt-opportunities-content {
+    padding-right: 35px;
+
+    h3 {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .opportunities-btn {
+        margin-top: 25px;
+
+        .default-btn {
+            background: linear-gradient(115.26deg, #08A9E6 13.55%, #6B48FF 85.12%);
+            color: var(--whiteColor);
+            position: relative;
+            border-radius: 5px;
+            border: none;
+            z-index: 1;
+            padding: {
+                top: 12px;
+                bottom: 12px;
+            };
+            &::before {
+                top: 0;
+                left: 0;
+                right: 0;
+                content: "";
+                width: 100%;
+                opacity: 0;
+                z-index: -1;
+                height: 100%;
+                position: absolute;
+                border-radius: 5px;
+                visibility: hidden;
+                transition: var(--transition);
+                background: var(--primaryColor);
+            }
+            &:hover {
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            img {
+                max-width: 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.d-none {
+    &.d-block {
+        display: block !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .stories-image {
+        border-radius: 0 20px 0 0;
+        margin-bottom: 25px;
+        padding: {
+            left: 0;
+            right: 0;
+        };
+        img {
+            border-radius: 0 20px 0 0;
+        }
+        &::before, &::after {
+            display: none;
+        }
+    }
+    .stories-content {
+        h2 {
+            margin-bottom: 12px;
+            font-size: 26px;
+        }
+        p {
+            font-size: 14px;
+        }
+        .default-btn {
+            margin-top: 2px;
+        }
+    }
+    .stories-img {
+        border-radius: 20px 0 0 0;
+        margin-top: 25px;
+        padding: {
+            left: 0;
+            right: 0;
+        };
+        img {
+            border-radius: 20px 0 0 0;
+        }
+        &::before, &::after {
+            display: none;
+        }
+    }
+    .kc-stories-content {
+        padding-right: 0;
+    
+        h2 {
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 14px;
+        }
+        .box {
+            padding: 15px;
+            margin-top: 15px;
+    
+            p {
+                font-size: 16px;
+            }
+        }
+        .stories-btn {
+            margin-top: 15px;
+        }
+    }
+    .kc-stories-image {
+        margin-top: 25px;
+        padding: {
+            right: 0;
+            bottom: 0;
+        };
+        .stories-shape {
+            display: none;
+        }
+    }
+    .rt-opportunities-area {
+        border-radius: 10px;
+        margin: {
+            left: 0;
+            right: 0;
+        };
+    }
+    .rt-opportunities-content {
+        margin-bottom: 25px;
+        padding-right: 0;
+    
+        h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 14px;
+        }
+        .opportunities-btn {
+            margin-top: 15px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .stories-image {
+        margin-bottom: 25px;
+        padding: {
+            left: 0;
+            right: 45px;
+        };
+        &::before {
+            right: 0;
+        }
+        &::after {
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .stories-content {
+        h2 {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+        p {
+            font-size: 15px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .stories-img {
+        margin-top: 25px;
+        border-radius: 60px 0 0 0;
+        padding: {
+            right: 0;
+            left: 45px;
+        };
+        img {
+            border-radius: 60px 0 0 0;
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .kc-stories-content {
+        padding-right: 0;
+    
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 15px;
+        }
+        .box {
+            padding: 20px;
+    
+            p {
+                font-size: 19px;
+            }
+        }
+        .stories-btn {
+            margin-top: 25px;
+        }
+    }
+    .kc-stories-image {
+        margin-top: 25px;
+    }
+    .rt-opportunities-area {
+        margin: {
+            left: 0;
+            right: 0;
+        };
+    }
+    .rt-opportunities-content {
+        margin-bottom: 25px;
+        padding-right: 0;
+    
+        h3 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 15px;
+        }
+        .opportunities-btn {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .stories-image {
+        padding: {
+            left: 0;
+            right: 65px;
+        };
+        &::before {
+            right: 5px;
+        }
+        &::after {
+            right: 5px;
+        }
+    }
+    .stories-content {
+        p {
+            font-size: 17px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+    }
+    .stories-img {
+        padding: {
+            right: 0;
+            left: 65px;
+        };
+        &::before {
+            left: 5px;
+        }
+        &::after {
+            left: 5px;
+        }
+    }
+    .kc-stories-content {
+        padding-right: 0;
+    
+        h2 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 17px;
+        }
+        .box {
+            padding: 20px;
+            margin-top: 15px;
+    
+            p {
+                font-size: 19px;
+            }
+        }
+        .stories-btn {
+            margin-top: 20px;
+        }
+    }
+    .kc-stories-image {
+        padding: {
+            right: 30px;
+            bottom: 30px;
+        };
+    }
+    .rt-opportunities-area {
+        margin: {
+            left: 0;
+            right: 0;
+        };
+    }
+    .rt-opportunities-content {
+        padding-right: 0;
+    
+        h3 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 17px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .kc-stories-content {
+        padding-right: 30px;
+    }
+    .rt-opportunities-area {
+        margin: {
+            left: 15px;
+            right: 15px;
+        };
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    .stories-area {
+        .shape2 {
+            left: 7%;
+            top: 20%;
+        }
+        .shape3 {
+            &.style-two {
+                bottom: 39%;
+                left: 3%;
+            }
+        }
+    }
+
+}

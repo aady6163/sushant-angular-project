@@ -1,0 +1,253 @@
+.kitchen-coach-banner-area {
+    background-color: #21225f;
+    position: relative;
+    padding-top: 60px;
+    overflow: hidden;
+    z-index: 1;
+}
+.kitchen-coach-banner-content {
+    padding-right: 15px;
+    position: relative;
+    top: -50px;
+
+    h1 {
+        font-size: 65px;
+        margin-bottom: 20px;
+        color: var(--whiteColor);
+    }
+    p {
+        color: var(--whiteColor);
+        font-size: 18px;
+    }
+    .banner-btn-list {
+        padding-left: 0;
+        list-style-type: none;
+        margin: {
+            top: 30px;
+            bottom: 0;
+        };
+        li {
+            display: inline-block;
+            margin-right: 20px;
+
+            .default-btn {
+                background-color: var(--primaryColor);
+                color: var(--whiteColor);
+
+                &:hover {
+                    background-color: var(--secondaryColor);
+                    border-color: var(--secondaryColor);
+                }
+            }
+            .popup-video {
+                border: 1px solid var(--primaryColor);
+                transition: var(--transition);
+                padding: 10px 65px 10px 30px;
+                background-color: #21225f;
+                color: var(--primaryColor);
+                display: inline-block;
+                position: relative;
+                box-shadow: unset;
+                font: {
+                    size: var(--fontSize);
+                    weight: 500;
+                };
+                img {
+                    transform: translateY(-50%);
+                    position: absolute;
+                    max-width: 20px;
+                    right: 30px;
+                    top: 50%;
+                }
+                &:hover {
+                    border-color: var(--whiteColor);
+                    background-color: var(--whiteColor);
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+.kc-banner-shape-1 {
+    left: -10px;
+    z-index: -1;
+    bottom: -10px;
+    position: absolute;
+}
+.kc-banner-shape-2 {
+    position: absolute;
+    right: -10px;
+    top: -130px;
+    z-index: -1;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .kitchen-coach-banner-area {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        };
+    }
+    .kitchen-coach-banner-content {
+        top: 0;
+        padding-right: 0;
+        text-align: center;
+    
+        h1 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 14px;
+        }
+        .banner-btn-list {
+            margin-top: 15px;
+
+            li {
+                margin: {
+                    left: 6px;
+                    right: 6px;
+                };
+                .popup-video {
+                    padding: 10px 47px 10px 20px;
+                    font-size: 14px;
+
+                    img {
+                        max-width: 18px;
+                        right: 20px;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .kitchen-coach-banner-image {
+        margin-top: 25px;
+    }
+    .kc-banner-shape-1, .kc-banner-shape-2 {
+        display: none;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .kitchen-coach-banner-area {
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        };
+    }
+    .kitchen-coach-banner-content {
+        top: 0;
+        padding-right: 0;
+        text-align: center;
+    
+        h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 15px;
+        }
+        .banner-btn-list {
+            margin-top: 20px;
+
+            li {
+                margin: {
+                    left: 9px;
+                    right: 9px;
+                };
+                .popup-video {
+                    padding: 10px 60px 10px 25px;
+                    font-size: 15px;
+
+                    img {
+                        right: 25px;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .kitchen-coach-banner-image {
+        margin-top: 25px;
+    }
+    .kc-banner-shape-2 {
+        opacity: 0.4;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .kitchen-coach-banner-area {
+        padding-top: 60px;
+    }
+    .kitchen-coach-banner-content {
+        position: relative;
+        padding-right: 0;
+        top: -30px;
+    
+        h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .banner-btn-list {
+            margin-top: 20px;
+
+            li {
+                margin-right: 15px;
+                
+                .popup-video {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .kc-banner-shape-1 {
+        opacity: 0.4;
+    }
+    .kc-banner-shape-2 {
+        opacity: 0.4;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .kitchen-coach-banner-content {
+        top: -40px;
+    
+        h1 {
+            font-size: 55px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

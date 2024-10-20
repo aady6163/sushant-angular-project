@@ -1,0 +1,13 @@
+@import "../courses/courses.component.scss";
+
+.single-courses-box {
+    .content {
+        text-align: center;
+
+        .rating {
+            .d-flex {
+                justify-content: center;
+            }
+        }
+    }
+}

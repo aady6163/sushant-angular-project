@@ -1,0 +1,73 @@
+<!-- Default Section -->
+<div
+    class="free-trial-area bg-color"
+    [ngClass]="{'d-none': router.url === '/vendor-certification-etraining' || router.url === '/online-training-school' || router.url === '/distance-learning' || router.url === '/about-us'}"
+>
+    <div class="free-trial-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 offset-lg-3">
+                    <div class="free-trial-content">
+                        <i class="flaticon-user"></i>
+                        <h2>Transform access to education</h2>
+                        <p>Explore all of our courses and pick your suitable ones to enroll and start learning with us!</p>
+                        <a routerLink="/profile-authentication" class="default-btn">Register For Free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This section for Vendor Certification eTraining Demo -->
+<div
+    class="free-trial-area ptb-100 bg-image d-none"
+    [ngClass]="{'d-block': router.url === '/vendor-certification-etraining'}"
+>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="free-trial-content">
+                    <i class="flaticon-user"></i>
+                    <h2>Transform access to education</h2>
+                    <p>Explore all of our courses and pick your suitable ones to enroll and start learning with us!</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="free-trial-btn">
+                    <a routerLink="/profile-authentication" class="default-btn">Register For Free</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape5"><img src="assets/img/shape/shape5.png" alt="shape"></div>
+</div>
+
+<!-- This section for Online Training School Demo & Distance Learning Demo -->
+<div
+    class="free-trial-area ptb-100 style-two bg-image d-none"
+    [ngClass]="{'d-block': router.url === '/online-training-school' || router.url === '/distance-learning' || router.url === '/about-us'}"
+>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="free-trial-content">
+                    <i class="flaticon-user"></i>
+                    <h2>Transform access to education</h2>
+                    <p>Explore all of our courses and pick your suitable ones to enroll and start learning with us!</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="free-trial-btn">
+                    <a routerLink="/profile-authentication" class="default_btn">Register For Free</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape5"><img src="assets/img/shape/shape5.png" alt="shape"></div>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>

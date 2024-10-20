@@ -1,0 +1,224 @@
+<!-- Default Section -->
+<div
+    class="funfacts-area bg-color"
+    [ngClass]="{'d-none': router.url === '/distance-learning' || router.url === '/learning-management' || router.url === '/online-education-courses' || router.url === '/remote-training' || router.url === '/online-art-learning' || router.url === '/about-us' || router.url === '/become-an-instructor'}"
+>
+    <div class="funfacts-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6 col-sm-4">
+                    <div class="single-funfacts-box white-color">
+                        <i class="flaticon-books"></i>
+                        <h3>
+                            <span class="odometer">
+                                7500
+                            </span>
+                            <span class="sign">+</span>
+                        </h3>
+                        <p>COURSES</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 col-sm-4">
+                    <div class="single-funfacts-box white-color">
+                        <i class="flaticon-teacher"></i>
+                        <h3>
+                            <span class="odometer">
+                                1500
+                            </span>
+                            <span class="sign">+</span>
+                        </h3>
+                        <p>INSTRUCTORS</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 col-sm-4">
+                    <div class="single-funfacts-box white-color">
+                        <i class="flaticon-people"></i>
+                        <h3>
+                            <span class="odometer">
+                                165000
+                            </span>
+                            <span class="sign">+</span>
+                        </h3>
+                        <p>STUDENTS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This section for Distance Learning Demo & Learning Management Demo & Online Education Courses Demo -->
+<div
+    class="funfacts-area pt-100 pb-75 d-none"
+    [ngClass]="{'d-block': router.url === '/distance-learning' || router.url === '/learning-management' || router.url === '/online-education-courses' || router.url === '/become-an-instructor'}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="single-funfacts-box style-two">
+                    <i class="flaticon-books"></i>
+                    <h3>
+                        <span class="odometer">
+                            7500
+                        </span>
+                        <span class="sign">+</span>
+                    </h3>
+                    <p>COURSES</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="single-funfacts-box style-two">
+                    <i class="flaticon-teacher"></i>
+                    <h3>
+                        <span class="odometer">
+                            1500
+                        </span>
+                        <span class="sign">+</span>
+                    </h3>
+                    <p>INSTRUCTORS</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="single-funfacts-box style-two">
+                    <i class="flaticon-people"></i>
+                    <h3>
+                        <span class="odometer">
+                            165000
+                        </span>
+                        <span class="sign">+</span>
+                    </h3>
+                    <p>STUDENTS</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="single-funfacts-box style-two">
+                    <i class="flaticon-essential"></i>
+                    <h3>
+                        <span class="odometer">
+                            100
+                        </span>
+                        <span class="sign">%</span>
+                    </h3>
+                    <p>SATISFACTION RATE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This section for Remote Training Demo & Online Art Learning Demo -->
+<div
+    class="rt-funfacts-area pt-100 pb-75 d-none"
+    [ngClass]="{'d-block': router.url === '/remote-training' || router.url === '/online-art-learning'}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="rt-funfacts-box">
+                    <h3>
+                        <span class="odometer">
+                            7500
+                        </span>
+                        <span class="plus">+</span>
+                    </h3>
+                    <p>COURSES</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="rt-funfacts-box">
+                    <h3>
+                        <span class="odometer">
+                            1500
+                        </span>
+                        <span class="plus">+</span>
+                    </h3>
+                    <p>INSTRUCTORS</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="rt-funfacts-box">
+                    <h3>
+                        <span class="odometer">
+                            145
+                        </span>
+                        <span class="sign">M</span><span class="plus">+</span>
+                    </h3>
+                    <p>STUDENTS</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="rt-funfacts-box">
+                    <h3>
+                        <span class="odometer">
+                            200
+                        </span>
+                        <span class="sign">K</span><span class="plus">+</span>
+                    </h3>
+                    <p>REVIEWS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This section for About Us Page -->
+<div
+    class="funfacts-area pb-75 d-none"
+    [ngClass]="{'d-block': router.url === '/about-us'}"
+>
+    <div class="container">
+        <div class="section-title style-two">
+            <h2>We just keep growing</h2>
+            <p>Explore all of our courses and pick your suitable ones to enroll and start learning with us!</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="single-funfacts-box style-two">
+                    <i class="flaticon-books"></i>
+                    <h3>
+                        <span class="odometer">
+                            7500
+                        </span>
+                        <span class="sign">+</span>
+                    </h3>
+                    <p>COURSES</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="single-funfacts-box style-two">
+                    <i class="flaticon-teacher"></i>
+                    <h3>
+                        <span class="odometer">
+                            1500
+                        </span>
+                        <span class="sign">+</span>
+                    </h3>
+                    <p>INSTRUCTORS</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="single-funfacts-box style-two">
+                    <i class="flaticon-people"></i>
+                    <h3>
+                        <span class="odometer">
+                            165000</span>
+                            <span class="sign">+</span>
+                        </h3>
+                    <p>STUDENTS</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
+                <div class="single-funfacts-box style-two">
+                    <i class="flaticon-essential"></i>
+                    <h3>
+                        <span class="odometer">
+                            100
+                        </span>
+                        <span class="sign">%</span>
+                    </h3>
+                    <p>SATISFACTION RATE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

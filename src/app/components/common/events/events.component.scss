@@ -1,0 +1,205 @@
+.single-events-box {
+    padding: 30px;
+    position: relative;
+    margin-bottom: 25px;
+    background-color: var(--whiteColor);
+
+    .link-btn {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        display: block;
+        position: absolute;
+    }
+    .content {
+        padding-left: 25px;
+
+        .location {
+            font-weight: 500;
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+            display: inline-block;
+            color: var(--paragraphColor);
+    
+            i {
+                color: var(--secondaryColor);
+                transform: translateY(-50%);
+                position: absolute;
+                margin-top: -1.5px;
+                font-size: 20px;
+                top: 50%;
+                left: 0;
+            }
+        }
+        h3 {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+    }
+    .date {
+        border-right: 1px solid #eeeeee;
+        padding-right: 25px;
+        
+        .day {
+            color: var(--primaryColor);
+            font-size: 50px;
+            line-height: 1;
+        }
+        .month {
+            margin-top: 5px;
+            font: {
+                size: 17px;
+                weight: 500;
+            };
+        }
+        .default-btn {
+            background-color: var(--primaryColor);
+            color: var(--whiteColor);
+            margin-top: 15px;
+            padding: {
+                top: 8px;
+                bottom: 8px;
+            };
+        }
+    }
+    &::before {
+        left: 0;
+        width: 0;
+        bottom: 0;
+        height: 2px;
+        content: '';
+        position: absolute;
+        transition: var(--transition);
+        background-color: var(--primaryColor);
+    }
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+    &.with-boxshadow {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+.more-events {
+    text-align: center;
+    margin-top: 25px;
+
+    p {
+        font: {
+            size: 17px;
+            weight: 500;
+        };
+        a {
+            color: var(--secondaryColor);
+            text-decoration: underline;
+
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .single-events-box {
+        padding: 20px;
+
+        .d-flex {
+            display: block !important;
+        }
+        .date {
+            border-right: none;
+            padding-right: 0;
+
+            .day {
+                font-size: 30px;
+            }
+            .month {
+                font-size: 14px;
+            }
+            .default-btn {
+                padding: {
+                    top: 7px;
+                    bottom: 7px;
+                };
+            }
+        }
+        .content {
+            padding-left: 0;
+            margin-top: 20px;
+
+            h3 {
+                font-size: 18px;
+            }
+            .location {
+                padding-left: 19px;
+                margin-bottom: 13px;
+
+                i {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .more-events {
+        margin-top: 10px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .single-events-box {
+        padding: 25px;
+
+        .d-flex {
+            display: block !important;
+        }
+        .date {
+            border-right: none;
+            padding-right: 0;
+        }
+        .content {
+            padding-left: 0;
+            margin-top: 20px;
+
+            h3 {
+                font-size: 20px;
+            }
+            .location {
+                margin-bottom: 13px;
+            }
+        }
+    }
+    .more-events {
+        margin-top: 15px;
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,234 @@
+.zoom-meetings-details-header {
+    margin-bottom: 30px;
+
+    .sub-title {
+        display: block;
+        margin-bottom: 12px;
+        color: var(--primaryColor);
+        font: {
+            size: 15px;
+            weight: 500;
+        };
+    }
+    h2 {
+        margin-bottom: 0;
+        font-size: 35px;
+    }
+}
+.zoom-meetings-details-image {
+    padding-right: 30px;
+    margin-bottom: 25px;
+}
+.zoom-meetings-details-desc {
+    padding-right: 30px;
+
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 12px;
+
+        &:not(:first-child) {
+            margin-top: 25px;
+        }
+    }
+    p {
+        strong {
+            color: var(--blackColor);
+        }
+        a {
+            color: var(--primaryColor);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    ul, ol {
+        margin-bottom: 15px;
+
+        li {
+            margin-bottom: 12px;
+            color: var(--paragraphColor);
+            
+            strong {
+                color: var(--blackColor);
+            }
+            a {
+                color: var(--primaryColor);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.zoom-meetings-details-info {
+    background-color: #f9f9f9;
+    padding: 35px;
+    
+    h3 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .info {
+        list-style-type: none;
+        margin-bottom: 20px;
+        padding-left: 0;
+
+        li {
+            border-bottom: 1px solid #eeeeee;
+            color: var(--blackColor);
+            padding: {
+                top: 14px;
+                bottom: 14px;
+            };
+            span {
+                font-weight: 500;
+                color: var(--blackColor);
+            }
+            &:first-child {
+                border-top: 1px solid #eeeeee;
+            }
+        }
+    }
+    .btn-box {
+        text-align: center;
+        margin-top: 30px;
+
+        .default-btn {
+            display: block;
+            color: var(--whiteColor);
+            border-color: var(--primaryColor);
+            background-color: var(--primaryColor);
+            padding: {
+                top: 11px;
+                bottom: 11px;
+            };
+            &:hover {
+                background-color: var(--secondaryColor);
+                border-color: var(--secondaryColor);
+            }
+            &:nth-child(2) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .zoom-meetings-details-header {
+        margin-bottom: 25px;
+
+        .sub-title {
+            font-size: 13px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+    }
+    .zoom-meetings-details-image {
+        padding-right: 0;
+    }
+    .zoom-meetings-details-desc {
+        padding-right: 0;
+
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 21px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 19px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        h5 {
+            font-size: 17px;
+        }
+        h6 {
+            font-size: 16px;
+        }
+    }
+    .zoom-meetings-details-info {
+        margin-top: 25px;
+        padding: 20px;
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .info {
+            li {
+                padding: {
+                    top: 12px;
+                    bottom: 12px;
+                };
+            }
+        }
+        .btn-box {
+            margin-top: 20px;
+            
+            .default-btn {
+                &:nth-child(2) {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .zoom-meetings-details-header {
+        .sub-title {
+            font-size: 13px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .zoom-meetings-details-image {
+        padding-right: 0;
+    }
+    .zoom-meetings-details-desc {
+        padding-right: 0;
+    }
+    .zoom-meetings-details-info {
+        padding: 25px;
+        margin-top: 25px;
+
+        h3 {
+            font-size: 20px;
+        }
+        .btn-box {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

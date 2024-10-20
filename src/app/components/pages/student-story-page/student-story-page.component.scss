@@ -1,0 +1,168 @@
+.success-story-sidebar {
+    padding-right: 30px;
+
+    .story {
+        text-align: center;
+        position: relative;
+        border-radius: 5px;
+        
+        img {
+            border-radius: 5px;
+        }
+    }
+    .quote {
+        z-index: 1;
+        margin-top: 30px;
+        position: relative;
+        color: var(--primaryColor);
+        padding: {
+            top: 20px;
+            left: 20px;
+        };
+        font: {
+            size: 22px;
+            weight: 500;
+        };
+        &::before {
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: .07;
+            line-height: 1;
+            content: "\f10b";
+            position: absolute;
+            color: var(--blackColor);
+            font: {
+                family: flaticon;
+                size: 100px;
+            };
+        }
+    }
+}
+.success-story-desc {
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 15px;
+
+        &:not(:first-child) {
+            margin-top: 25px;
+        }
+    }
+    strong {
+        color: var(--blackColor) !important;
+    }
+    p {
+        font-size: 17px;
+        
+        a {
+            color: var(--secondaryColor);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    ul, ol {
+        li {
+            color: var(--paragraphColor);
+            margin-bottom: 12px;
+
+            a {
+                color: var(--secondaryColor);
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .success-story-sidebar {
+        margin-bottom: 25px;
+        border-bottom: 1px solid #eeeeee;
+        padding: {
+            right: 0;
+            bottom: 25px;
+        };
+        .story {
+            .popup-video {
+                padding: 6px 20px;
+            }
+        }
+        .quote {
+            margin-top: 25px;
+            font-size: 18px;
+            padding: {
+                left: 0;
+                right: 0;
+            };
+            &::before {
+                opacity: 0.04;
+            }
+        }
+    }
+    .success-story-desc {
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 21px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 19px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        h5 {
+            font-size: 17px;
+        }
+        h6 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .success-story-sidebar {
+        padding-right: 0;
+        margin-bottom: 30px;
+
+        .quote {
+            font-size: 20px;
+        }
+    }
+    .success-story-desc {
+        p {
+            font-size: 15px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

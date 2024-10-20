@@ -1,0 +1,52 @@
+<!-- Default Section -->
+<div
+    class="subscribe-area"
+    [ngClass]="{'d-none': router.url === '/learning-management'}"
+>
+    <div class="container">
+        <div class="kc-subscribe-inner-box ptb-100">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-7 col-md-12">
+                    <div class="kc-subscribe-content">
+                        <h2>There's a better way to get healthy subscribe to my newsletter</h2>
+                        <p>Explore all of our courses and pick your ones to enroll and start learning with us!</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <form class="newsletter-form">
+                        <input type="email" class="input-newsletter" placeholder="Enter your email address" name="email" required autocomplete="off">
+                        <button type="submit" class="default-btn">Subscribe Now</button>
+                    </form>    
+                </div>
+            </div>
+            <div class="kc-subscribe-shape-1">
+                <img src="assets/img/kitchen-coach/subscribe-shape1.png" alt="image">
+            </div>
+            <div class="kc-subscribe-shape-2">
+                <img src="assets/img/kitchen-coach/subscribe-shape2.png" alt="image">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This section for Learning Management Demo -->
+<div
+    class="vc-subscribe-area d-none"
+    [ngClass]="{'d-block': router.url === '/learning-management'}"
+>
+    <div class="container">
+        <div class="vc-subscribe-inner-box ptb-100">
+            <div class="vc-subscribe-content">
+                <h2>Subscribe to our newsletter</h2>
+                <p>Explore all of our courses and pick your suitable ones to enroll and start learning with us!</p>
+                <form class="newsletter-form">
+                    <input type="email" class="input-newsletter" placeholder="Enter your email address" name="email" required autocomplete="off">
+                    <button type="submit" class="default-btn">Subscribe Now</button>
+                </form>  
+            </div>
+            <div class="vc-subscribe-shape">
+                <img src="assets/img/vendor-certification/subscribe-shape.png" alt="image">
+            </div>
+        </div>
+    </div>
+</div>

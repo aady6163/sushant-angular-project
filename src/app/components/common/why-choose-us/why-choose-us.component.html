@@ -1,0 +1,83 @@
+<!-- Default Section -->
+<div
+    class="why-choose-us-area pb-100"
+    [ngClass]="{'d-none': router.url === '/remote-training'}"
+>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="why-choose-us-image">
+                    <img src="assets/img/why-choose-us.png" alt="why-choose-us">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="why-choose-us-content">
+                    <span class="sub-title">WHY CHOOSE US?</span>
+                    <h2>Learn the Latest Top Skills</h2>
+                    <p>Explore all of our courses and pick your suitable ones to enroll and start learning with us!</p>
+                    <ul class="features-list">
+                        <li><i class="flaticon-check-mark"></i> 10,000 Online Courses Free + Paid</li>
+                        <li><i class="flaticon-check-mark"></i> Go at Your Own Pace in this World</li>
+                        <li><i class="flaticon-check-mark"></i> Learn from Industry Experts - Edla</li>
+                        <li><i class="flaticon-check-mark"></i> Leadership, Training and Tools! Everything</li>
+                    </ul>
+                    <a routerLink="/profile-authentication" class="default-btn style-two">Get Started For Free</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This section for Remote Training Demo -->
+<div
+    class="rt-choose-area pt-100 pb-75 d-none"
+    [ngClass]="{'d-block': router.url === '/remote-training'}"
+>
+    <div class="container-fluid">
+        <div class="section-title">
+            <h2>Why you Should choose Edla</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="rt-choose-card">
+                    <div class="content">
+                        <div class="icon-image">
+                            <img src="assets/img/remote-training/choose/choose1.png" alt="icon-image">
+                        </div>
+                        <h3>Learn the Latest Top Skills</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="rt-choose-card">
+                    <div class="content">
+                        <div class="icon-image">
+                            <img src="assets/img/remote-training/choose/choose2.png" alt="icon-image">
+                        </div>
+                        <h3>Learn From The Industry Experts</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="rt-choose-card">
+                    <div class="content">
+                        <div class="icon-image">
+                            <img src="assets/img/remote-training/choose/choose3.png" alt="icon-image">
+                        </div>
+                        <h3>Learn in Your Own Way Pace</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="rt-choose-card">
+                    <div class="content">
+                        <div class="icon-image">
+                            <img src="assets/img/remote-training/choose/choose4.png" alt="icon-image">
+                        </div>
+                        <h3>Enjoy Learning From Anywhere</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

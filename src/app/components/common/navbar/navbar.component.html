@@ -1,0 +1,633 @@
+<div
+    class="navbar-area"
+    [ngClass]="{'bg-black': router.url === '/online-education-courses' || router.url === '/online-art-learning', 'sticky': isSticky}"
+>
+    <div
+        class="container-fluid"
+        [ngClass]="{'container': router.url === '/distance-learning'}"
+    >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
+            <a
+                class="navbar-brand"
+                routerLink="/"
+                [ngClass]="{'d-none': router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+            >
+                <img src="assets/img/logo.png" alt="logo">
+            </a>
+            <a
+                class="navbar-brand d-none"
+                routerLink="/"
+                [ngClass]="{'d-inline-block': router.url === '/online-education-courses' || router.url === '/online-art-learning'}"
+            >
+                <img src="assets/img/white-logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <div
+                    class="category-menu"
+                    [ngClass]="{'d-none': router.url === '/distance-learning'}"
+                >
+                   
+                    <div class="category-dropdown-wrap">
+                        <div class="ul category-dropdown">
+                            <div class="li cat-item">
+                                <a href="javascript:void(0)">Development <i class="flaticon-right-arrow-2"></i></a>
+                                <div class="ul children sub-categories">
+                                    <div class="li cat-item has-children">
+                                        <a href="javascript:void(0)">Web Development <i class="flaticon-right-arrow-2"></i></a>
+                                        <div class="ul children course-list">
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img1.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>The Complete 2024 Web Development</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$99</span>
+                                                            <span class="old-price">$199</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img2.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>Hands-on Artificial Neural Networks</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$69</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img3.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>The Data Science Complete Courses 2024</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">Free</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="li cat-item has-children">
+                                        <a href="javascript:void(0)">Data Science <i class="flaticon-right-arrow-2"></i></a>
+                                        <div class="ul children course-list">
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img4.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>Agile Crash Course: Project Management</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$49</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="li cat-item has-children">
+                                        <a href="javascript:void(0)">Mobile Development <i class="flaticon-right-arrow-2"></i></a>
+                                        <div class="ul children course-list">
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img5.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>Vue JS 3 - The Complete Guide Vue</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$79</span>
+                                                            <span class="old-price">$99</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="li cat-item has-children">
+                                        <a href="javascript:void(0)">Programming <i class="flaticon-right-arrow-2"></i></a>
+                                        <div class="ul children course-list">
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img6.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>The Drawing Course - to Advanced</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$89</span>
+                                                            <span class="old-price">$119</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="li cat-item has-children">
+                                        <a href="javascript:void(0)">Game Development <i class="flaticon-right-arrow-2"></i></a>
+                                        <div class="ul children course-list">
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img7.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>Node.js for Beginners: Zero to Hero</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$119</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="li cat-item">
+                                <a href="javascript:void(0)">Business <i class="flaticon-right-arrow-2"></i></a>
+                                <div class="ul children sub-categories">
+                                    <div class="li cat-item has-children">
+                                        <a href="javascript:void(0)">Entrepreneurship <i class="flaticon-right-arrow-2"></i></a>
+                                        <div class="ul children course-list">
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img1.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>The Complete 2024 Web Development</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$99</span>
+                                                            <span class="old-price">$199</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img2.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>Hands-on Artificial Neural Networks</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$69</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img3.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>The Data Science Complete Courses 2024</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">Free</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="li cat-item has-children">
+                                        <a href="javascript:void(0)">Communication <i class="flaticon-right-arrow-2"></i></a>
+                                        <div class="ul children course-list">
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img4.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>Agile Crash Course: Project Management</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$49</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="li cat-item has-children">
+                                        <a href="javascript:void(0)">Management <i class="flaticon-right-arrow-2"></i></a>
+                                        <div class="ul children course-list">
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img5.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>Vue JS 3 - The Complete Guide Vue</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$79</span>
+                                                            <span class="old-price">$99</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="li cat-item has-children">
+                                        <a href="javascript:void(0)">Sales <i class="flaticon-right-arrow-2"></i></a>
+                                        <div class="ul children course-list">
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img6.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>The Drawing Course - to Advanced</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$89</span>
+                                                            <span class="old-price">$119</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="li cat-item has-children">
+                                        <a href="javascript:void(0)">Business Strategy <i class="flaticon-right-arrow-2"></i></a>
+                                        <div class="ul children course-list">
+                                            <div class="li course-item">
+                                                <a routerLink="/courses-details" class="course-permalink">
+                                                    <div class="course-thumbnail">
+                                                        <img src="assets/img/courses/courses-img7.jpg" alt="course">
+                                                    </div>
+                                                    <div class="course-caption">
+                                                        <h3>Node.js for Beginners: Zero to Hero</h3>
+                                                        <div class="price">
+                                                            <span class="new-price">$119</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+                    </li>
+                </ul>
+                <form
+                    class="search-box"
+                    [ngClass]="{'d-none': router.url === '/distance-learning'}"
+                >
+                    <input type="text" class="input-search" placeholder="Search for anything">
+                    <button type="submit"><i class="flaticon-search"></i></button>
+                </form>
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">eLearning School</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/vendor-certification-etraining" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Vendor Certification eTraining</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/online-training-school" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Online Training School</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/distance-learning" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Distance Learning</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/kitchen-coach" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Kitchen Coach</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/learning-management" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Learning Management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/online-education-courses" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Online Education Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/remote-training" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Remote Training</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/online-art-learning" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Online Art Learning</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    
+                    <!-- <li class="nav-item megamenu">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <ul class="megamenu-submenu">
+                                                <li class="nav-item">
+                                                    <a routerLink="/courses-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Courses Basic Grid</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/courses-grid-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Courses Modern Grid</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Courses Wide Grid</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/courses-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Courses Left Sidebar</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/courses-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Courses Right Sidebar</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/courses-list" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Courses List Sidebar</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/instructors" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Instructor</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="megamenu-submenu">
+                                                <li class="nav-item">
+                                                    <a routerLink="/courses-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Free Course Single</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/courses-details-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Paid Course Single</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/courses-details-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Sticky Sidebar Course Single</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/courses-category" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Categories Courses</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/profile" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Profile Dashboard</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/categories" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Categories 01</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/categories-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Categories 02</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="megamenu-submenu">
+                                                <li class="nav-item">
+                                                    <a routerLink="/zoom-meetings" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Zoom Meetings</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/zoom-meetings-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Zoom Meetings Details</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/events" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Events</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/events-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Events Details</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/become-an-instructor" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Become an Instructor</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/membership-levels" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Membership Levels</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Login/Register</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <a routerLink="/courses-grid" class="d-block p-0">
+                                                <img src="assets/img/navbar.jpg" alt="image">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                    <!-- <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/instructors" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Instructor</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">Success Stories</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a routerLink="/success-stories" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Success Stories</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/student-story" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Student Story</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">Contact Us</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Contact Layout 01</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/contact-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Contact Layout 02</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/profile-authentication" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Login/Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/forgot-password" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Forgot Password</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Terms & Conditions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/purchase-guide" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Purchase Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/coming-soon" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Coming Soon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">404 Error Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/thank-you" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Thank You</a>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                    <!-- <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">Shop</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/products" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Products List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/cart" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/checkout" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Checkout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/product-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Product Details</a>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                    <!-- <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog Grid</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-grid-wide" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog Grid Wide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog Left Sidebar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog Right Sidebar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-special" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog Special</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/blog-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">Blog Details</a>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">Resource</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item nav-item-title">
+                                <strong>Library</strong>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/courses-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/courses-grid-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Article</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Key Notes</a>
+                            </li>
+                            <li class="nav-item nav-item-title">
+                               <strong>Assessment</strong>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Quizzes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Free Exercises</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Questions Banks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Customise Your Test</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">My Space</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">My Learnings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/instructors" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shared With Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/cart" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Purchases</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="no_dropdown nav-link">Become a Partner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/become-an-instructor" class="no_dropdown nav-link">Become a Faculty</a>
+                    </li>
+                   
+                </ul>
+                <ul class="navbar-nav for-responsive">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link" (click)="toggleDropdown('resource')">Resource</a>
+                        <ul class="dropdown-menu" [ngClass]="{'show': dropdownOpen['resource']}">
+                            <li class="nav-item nav-item-title"><strong>library</strong></li>
+                            <li class="nav-item"><a routerLink="/courses-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Courses</a></li>
+                            <li class="nav-item"><a routerLink="/courses-grid-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Article</a></li>
+                            <li class="nav-item"><a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Key Notes</a></li>
+                            <li class="nav-item nav-item-title"><strong>Assessment</strong></li>
+                            <li class="nav-item"><a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Quizzes</a></li>
+                            <li class="nav-item"><a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Free Exercises</a></li>
+                            <li class="nav-item"><a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Questions Banks</a></li>
+                            <li class="nav-item"><a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Customise Your Test</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link" (click)="toggleDropdown('myspace')">My Space</a>
+                        <ul class="dropdown-menu" [ngClass]="{'show': dropdownOpen['myspace']}">
+                            <li class="nav-item"><a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">My Learnings</a></li>
+                            <li class="nav-item"><a routerLink="/instructors" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shared With Me</a></li>
+                            <li class="nav-item"><a routerLink="/cart" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Purchases</a></li>
+                            <li class="nav-item"><a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Purchased Material</a></li>
+                            <li class="nav-item"><a routerLink="/thank-you" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Purchase Orders</a></li>
+                            <li class="nav-item"><a routerLink="/thank-you" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cashback</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="no_dropdown nav-link">Become a Partner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/become-an-instructor" class="no_dropdown nav-link">Become a Faculty</a>
+                    </li>
+                </ul>
+                
+                <div class="others-option d-flex align-items-center">
+                    
+                    <div class="option-item" style="padding-top: 0px;">
+                        <a routerLink="/profile-authentication" class="default-btn">
+                            <i class="flaticon-add"></i> Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

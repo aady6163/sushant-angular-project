@@ -1,0 +1,198 @@
+.single-zoom-meeting-box {
+    position: relative;
+    margin-bottom: 25px;
+    background-color: #f9f9f9;
+
+    .image {
+        overflow: hidden;
+        position: relative;
+
+        .category {
+            left: 0;
+            bottom: 0;
+            padding: 12px;
+            position: absolute;
+        }
+        .main-image {
+            transition: var(--transition);
+        }
+    }
+    .content {
+        padding: 30px;
+
+        h3 {
+            font-size: 23px;
+            margin-bottom: 16px;
+        }
+        .id {
+            display: block;
+            color: var(--paragraphColor);
+            font: {
+                size: 15px;
+                weight: 500;
+            };
+            span {
+                color: var(--primaryColor);
+            }
+        }
+        .password {
+            display: block;
+            margin-top: 12px;
+            color: var(--paragraphColor);
+            font: {
+                size: 15px;
+                weight: 500;
+            };
+            span {
+                color: var(--secondaryColor);
+            }
+        }
+        ul {
+            border-top: 1px solid #eeeeee;
+            list-style-type: none;
+            padding: {
+                top: 20px;
+                left: 30px;
+                right: 30px;
+            };
+            margin: {
+                bottom: 0;
+                top: 20px;
+                left: -30px;
+                right: -30px;
+            };
+            li {
+                color: var(--paragraphColor);
+                padding: {
+                    left: 10px;
+                    right: 10px;
+                };
+                &:last-child {
+                    padding-right: 0;
+                }
+                &:first-child {
+                    padding-left: 0;
+                }
+                span {
+                    display: block;
+                    margin-bottom: 2px;
+                    color: var(--blackColor);
+                    font: {
+                        size: 15px;
+                        weight: 500;
+                    };
+                }
+            }
+        }
+    }
+    .link-btn {
+        position: absolute;
+        display: block;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+    &:hover {
+        .image {
+            .main-image {
+                transform: scale(1.08);
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .single-zoom-meeting-box {
+        .content {
+            padding: 20px;
+
+            h3 {
+                font-size: 18px;
+                margin-bottom: 13px;
+            }
+            .id {
+                font-size: 13px;
+            }
+            .password {
+                font-size: 13px;
+            }
+            ul {
+                padding: {
+                    top: 15px;
+                    left: 20px;
+                    right: 20px;
+                };
+                margin: {
+                    bottom: 0;
+                    top: 15px;
+                    left: -20px;
+                    right: -20px;
+                };
+                li {
+                    padding: {
+                        left: 5px;
+                        right: 5px;
+                    };
+                    span {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .single-zoom-meeting-box {
+        .content {
+            padding: 20px;
+
+            h3 {
+                font-size: 20px;
+            }
+            .id {
+                font-size: 14px;
+            }
+            .password {
+                font-size: 14px;
+            }
+            ul {
+                padding: {
+                    top: 20px;
+                    left: 20px;
+                    right: 20px;
+                };
+                margin: {
+                    top: 20px;
+                    left: -20px;
+                    right: -20px;
+                };
+                li {
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

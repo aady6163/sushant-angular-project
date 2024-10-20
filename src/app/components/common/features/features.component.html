@@ -1,0 +1,132 @@
+<!-- Default Section -->
+<div
+    class="features-area bg-color"
+    [ngClass]="{'d-none': router.url === '/vendor-certification-etraining' || router.url === '/online-training-school' || router.url === '/distance-learning' || router.url === '/kitchen-coach' || router.url === '/learning-management' || router.url === '/remote-training' || router.url === '/online-art-learning'}"
+>
+    <div class="features-inner">
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-xl-3 col-lg-4 col-md-4 col-6 col-sm-4 offset-xl-3"
+                    *ngFor="let content of singleFeaturesBox.slice(0, 3)"
+                >
+                    <div class="single-features-box white-color">
+                        <i class="{{content.icon}}"></i>
+                        <h3>{{content.title}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="shape5"><img src="assets/img/shape/shape5.png" alt="shape"></div> -->
+</div>
+
+<!-- This section for Vendor Certification eTraining Demo -->
+<div
+    class="features-area pt-100 pb-75 bg-image d-none"
+    [ngClass]="{'d-block': router.url === '/vendor-certification-etraining'}"
+>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div
+                class="col-xl-3 col-lg-4 col-md-4 col-6 col-sm-4 offset-xl-1"
+                *ngFor="let content of singleFeaturesBox.slice(0, 3)"
+            >
+                <div class="single-features-box white-color">
+                    <i class="{{content.icon}}"></i>
+                    <h3>{{content.title}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This section for Online Training School Demo & Distance Learning Demo -->
+<div
+    class="features-area pt-100 pb-75 style-two bg-image d-none"
+    [ngClass]="{'d-block': router.url === '/online-training-school' || router.url === '/distance-learning'}"
+>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div
+                class="col-xl-3 col-lg-3 col-md-3 col-6 col-sm-6"
+                *ngFor="let content of singleFeaturesBox"
+            >
+                <div class="single-features-box white-color style-two">
+                    <i class="{{content.icon}}"></i>
+                    <h3>{{content.title}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>
+
+<!-- This section for Kitchen Coach Demo -->
+<div
+    class="features-area pt-100 pb-75 d-none"
+    [ngClass]="{'d-block': router.url === '/kitchen-coach'}"
+>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div
+                class="col-lg-3 col-sm-6"
+                *ngFor="let content of featuresWrapCard"
+            >
+                <div class="features-wrap-card">
+                    <img [src]="content.icon" alt="icon">
+                    <h3>{{content.title}}</h3>
+                    <p>{{content.paragraph}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This section for Learning Management Demo -->
+<div
+    class="features-area pt-100 pb-75 d-none"
+    [ngClass]="{'d-block': router.url === '/learning-management'}"
+>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div
+                class="col-lg-3 col-sm-6"
+                *ngFor="let content of featuresWrapBox"
+            >
+                <div class="features-wrap-card">
+                    <img [src]="content.icon" alt="icon">
+                    <h3>{{content.title}}</h3>
+                    <p>{{content.paragraph}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This section for Remote Training Demo & Online Art Learning Demo -->
+<div
+    class="rt-features-area pt-100 pb-75 d-none"
+    [ngClass]="{'d-block': router.url === '/remote-training' || router.url === '/online-art-learning'}"
+>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div
+                class="col-lg-3 col-md-6 col-sm-6"
+                *ngFor="let content of featuresCard"
+            >
+                <div class="rt-features-card">
+                    <div class="icon-image">
+                        <img [src]="content.icon" alt="icon-image">
+                    </div>
+                    <h3>{{content.title}}</h3>
+                    <p>{{content.paragraph}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

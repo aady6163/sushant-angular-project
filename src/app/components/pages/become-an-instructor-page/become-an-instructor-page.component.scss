@@ -1,0 +1,135 @@
+.become-a-teacher-area {
+    background: {
+        color: #f9f9f9;
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+}
+.become-a-teacher-content {
+    background-color: #8382dc5e;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 660px;
+    padding: 50px;
+    
+    h2 {
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+    form {
+        .form-group {
+            margin-bottom: 25px;
+
+            .form-control {
+                background-color: #f9f9f9;
+                font-size: var(--fontSize);
+                color: var(--blackColor);
+                padding-left: 18px;
+                border-radius: 5px;
+                box-shadow: unset;
+                height: 55px;
+                border: 0;
+
+                &::placeholder {
+                    font-weight: 300;
+                    color: var(--paragraphColor);
+                    transition: var(--transition);
+                }
+                &:focus {
+                    &::placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+            textarea.form-control {
+                padding-top: 18px;
+                height: auto;
+            }
+        }
+        .default-btn {
+            background-color: var(--primaryColor);
+            color: var(--whiteColor);
+            padding: {
+                left: 40px;
+                right: 40px;
+            };
+            &:hover {
+                background-color: var(--secondaryColor);
+                border-color: var(--secondaryColor);
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .become-a-teacher-content {
+        padding: 20px 15px;
+        border-radius: 5px;
+        max-width: 100%;
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
+        form {
+            .form-group {
+                margin-bottom: 20px;
+
+                .form-control {
+                    padding-left: 15px;
+                    font-size: 14px;
+                    height: 50px;
+                }
+            }
+            .default-btn {
+                padding: {
+                    left: 30px;
+                    right: 30px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .become-a-teacher-content {
+        padding: 30px;
+        max-width: 100%;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        form {
+            .form-group {
+                .form-control {
+                    padding-left: 15px;
+                    font-size: 15px;
+                    height: 50px;
+                }
+                textarea.form-control {
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,58 @@
+<div class="kitchen-coach-banner-area">
+    <div
+        class="container"
+        *ngFor="let content of bannerContent"
+    >
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="kitchen-coach-banner-content">
+                    <h1>{{content.title}}</h1>
+                    <p>{{content.paragraph}}</p>
+                    <ul class="banner-btn-list">
+                        <li>
+                            <a
+                                routerLink="{{content.buttonLink}}"
+                                class="default-btn"
+                            >
+                                {{content.buttonText}}
+                            </a>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                (click)="openPopup()"
+                                class="popup-video"
+                            >
+                                {{content.videoButtonText}} <img [src]="content.videoButtonIcon" alt="image">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="kitchen-coach-banner-image">
+                    <img src="assets/img/kitchen-coach/banner/main.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kc-banner-shape-1">
+        <img src="assets/img/kitchen-coach/banner/shape1.png" alt="image">
+    </div>
+    <div class="kc-banner-shape-2">
+        <img src="assets/img/kitchen-coach/banner/shape2.png" alt="image">
+    </div>
+</div>
+
+<!-- Video Popup -->
+<div
+    class="video-popup"
+    *ngIf="isOpen"
+>
+    <div class="popup-inner">
+        <iframe src="https://www.youtube.com/embed/ODfy2YIKS1M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button (click)="closePopup()" type="button" class="close-btn">
+            <i class='bx bx-x'></i>
+        </button>
+    </div>
+</div>

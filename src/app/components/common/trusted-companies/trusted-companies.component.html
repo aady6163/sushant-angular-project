@@ -1,0 +1,53 @@
+<div class="partner-area">
+    <div class="container">
+        <div
+            class="partner-inner-area"
+            *ngFor="let content of trustedCompaniesContent"
+        >
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <h2>{{content.title}}</h2>
+                    <p>{{content.paragraph}}</p>
+                    <a
+                        routerLink="{{content.buttonLink}}"
+                        class="default-btn"
+                    >
+                        {{content.buttonText}}
+                    </a>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <div class="partner-lists">
+                        <div class="row align-items-center">
+                            <div
+                                class="col-lg-3 col-md-3 col-sm-4 col-6"
+                                *ngFor="let item of content.partnerList"
+                            >
+                                <div class="item">
+                                    <img [src]="item.img" alt="partner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+        class="shape2"
+        [ngClass]="{'d-none': router.url === '/vendor-certification-etraining'}"
+    >
+        <img src="assets/img/shape/shape2.png" alt="shape">
+    </div>
+    <div
+        class="shape4 d-none"
+        [ngClass]="{'d-block': router.url === '/vendor-certification-etraining'}"
+    >
+        <img src="assets/img/shape/shape4.png" alt="shape">
+    </div>
+    <div
+        class="shape5 d-none"
+        [ngClass]="{'d-block': router.url === '/vendor-certification-etraining'}"
+    >
+        <img src="assets/img/shape/shape5.png" alt="shape">
+    </div>
+</div>

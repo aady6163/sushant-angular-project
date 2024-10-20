@@ -1,0 +1,328 @@
+.funfacts-area {
+    position: relative;
+    z-index: 1;
+
+    &.bg-color {
+        &::before {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            content: '';
+            position: absolute;
+            background-color: var(--primaryColor);
+            clip-path: polygon(0 0, 84% 0, 77% 100%, 0% 100%);
+        }
+        &::after {
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -2;
+            content: '';
+            height: 50%;
+            position: absolute;
+            background-color: #f5f5f5;
+        }
+    }
+}
+.funfacts-inner {
+    background: {
+        image: url(../../../../assets/img/shape/border-shape1.png);
+        position: -130px center;
+        repeat: no-repeat;
+        size: contain;
+    };
+    padding: {
+        top: 80px;
+        bottom: 55px;
+    };
+}
+.single-funfacts-box {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 95px;
+
+    i {
+        left: 0;
+        top: 50%;
+        line-height: 1;
+        margin-top: 7px;
+        font-size: 75px;
+        position: absolute;
+        color: var(--primaryColor);
+        transform: translateY(-50%);
+    }
+    h3 {
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    p {
+        line-height: initial;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .odometer-formatting-mark {
+        display: none;
+    }
+    &.white-color {
+        i {
+            color: var(--whiteColor);
+        }
+        h3 {
+            color: var(--whiteColor);
+        }
+        p {
+            color: var(--whiteColor);
+        }
+    }
+}
+.rt-funfacts-area {
+    background: linear-gradient(115.26deg, #08A9E6 13.55%, #6B48FF 85.12%);
+}
+.rt-funfacts-box {
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        left: -42px;
+        z-index: -1;
+        content: "";
+        width: 120px;
+        bottom: -22px;
+        height: 120px;
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+    }
+    h3 {
+        font-size: 40px;
+        margin-bottom: 5px;
+        color: var(--whiteColor);
+
+        .sign {
+            position: relative;
+            font-size: 35px;
+            top: 2px;
+        }
+    }
+    p {
+        line-height: initial;
+        letter-spacing: 5px;
+        color: #e8e8f3;
+        font: {
+            size: 15.5px;
+            weight: 500;
+        };
+    }
+}
+.d-none {
+    &.d-block {
+        display: block !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .funfacts-area {
+        &.bg-color {
+            &::before {
+                clip-path: unset;
+            }
+        }
+    }
+    .funfacts-inner {
+        background-image: unset;
+        padding: {
+            top: 60px;
+            bottom: 35px;
+        };
+        .row {
+            justify-content: center;
+        }
+    }
+    .single-funfacts-box {
+        padding-left: 0;
+        text-align: center;
+
+        i {
+            top: 0;
+            left: 0;
+            margin-top: 0;
+            font-size: 45px;
+            transform: unset;
+            position: relative;
+        }
+        h3 {
+            font-size: 28px;
+            margin: {
+                bottom: 5px;
+                top: 8px;
+            };
+        }
+        p {
+            font-size: 13px;
+            letter-spacing: 0;
+        }
+    }
+    .rt-funfacts-box {
+        text-align: center;
+    
+        &::before {
+            display: none;
+        }
+        h3 {
+            font-size: 32px;
+    
+            .sign {
+                font-size: 25px;
+                top: -2px;
+            }
+        }
+        p {
+            font-size: 13px;
+            letter-spacing: 3px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .funfacts-area {
+        &.bg-color {
+            &::before {
+                clip-path: unset;
+            }
+        }
+    }
+    .funfacts-inner {
+        background-image: unset;
+        padding: {
+            top: 80px;
+            bottom: 55px;
+        };
+    }
+    .single-funfacts-box {
+        padding-left: 67px;
+
+        i {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 28px;
+            margin-bottom: 3px;
+        }
+        p {
+            letter-spacing: 0;
+            font-size: 14px;
+        }
+        &.style-two {
+            padding-left: 0;
+
+            i {
+                transform: translateY(0);
+                display: inline-block;
+                position: relative;
+                left: 0;
+                top: 0;
+                margin: {
+                    top: 0;
+                    bottom: 10px;
+                };
+            }
+        }
+    }
+    .rt-funfacts-box {
+        &::before {
+            left: -20px;
+            width: 100px;
+            bottom: -15px;
+            height: 100px;
+        }
+        h3 {
+            font-size: 34px;
+    
+            .sign {
+                font-size: 30px;
+                top: 0;
+            }
+        }
+        p {
+            font-size: 15px;
+            letter-spacing: 4px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .funfacts-area {
+        &.bg-color {
+            &::before {
+                clip-path: polygon(0 0, 90% 0, 80% 100%, 0% 100%);
+            }
+        }
+    }
+    .single-funfacts-box {
+        padding-left: 85px;
+
+        i {
+            font-size: 65px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+    .rt-funfacts-box {
+        &::before {
+            left: -20px;
+            width: 100px;
+            bottom: -15px;
+            height: 100px;
+        }
+        h3 {
+            font-size: 34px;
+    
+            .sign {
+                font-size: 30px;
+                top: 0;
+            }
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .rt-funfacts-box {
+        &::before {
+            left: -30px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+    
+    .funfacts-inner {
+        background-position: 171px center;
+    }
+
+}

@@ -1,0 +1,374 @@
+<div
+    class="courses-area pt-100 pb-75"
+    [ngClass]="{'pt-0': router.url === '/online-training-school' || router.url === '/online-education-courses'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Explore top courses</h2>
+            <p>Explore all of our courses and pick your suitable ones to enroll and start learning with us!</p>
+            <a routerLink="/courses-grid" class="default-btn">View All Courses</a>
+        </div>
+        <div class="courses-tabs">
+            <!-- <mdb-tabs>
+                <mdb-tab title="Web Development"> -->
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-md-6">
+                            <div class="single-courses-box">
+                                <div class="image">
+                                    <img src="assets/img/courses/c-3.jpg" alt="courses-image">
+                                    <a routerLink="/courses-details" class="link-btn"></a>
+                                </div>
+                                <div class="content">
+                                    <h3><a routerLink="/courses-details">Comprehensive English Course (मराठी Version)</a> 
+                                         <span class="bookmark" [ngClass]="{'bookmarked': isBookmarked}" (click)="toggleBookmark()">
+                                            <i *ngIf="!isBookmarked" class="fa-regular fa-bookmark"></i>
+                                            <i *ngIf="isBookmarked" class="fa-solid fa-bookmark"></i>
+                                        </span>
+                                    </h3>
+                                    <a routerLink="/profile" class="author">amsk-edtech </a><span class="bookmark"> <i class="fa-regular fa-heart"></i></span>
+                                    <div class="rating">
+                                        <div class="d-flex align-items center">
+                                            <span class="overall">3.5</span>
+                                            <div class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star-half'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+                                            <span class="total">(1,800)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new-price">₹1499</span>
+                                        <span class="old-price">₹3500</span>
+                                    </div>
+                                </div>
+                                <div class="popover-quickview">
+                                    <h3><a routerLink="/courses-details">The Data Science Complete Courses 2024</a></h3>
+                                    <div class="stats d-flex align-items-center">
+                                        <span class="level">Category</span>
+                                        <span>75 Hours</span>
+                                    </div>
+                                    <p>Become a full-stack web developer with just one course. HTML, CSS, JavaScript, Node, React, MongoDB and more! </p>
+                                    <ul>
+                                        <li><i class="flaticon-check-mark"></i> Build fully websites and web apps for your startup or business.</li>
+                                        <li><i class="flaticon-check-mark"></i> Craft a portfolio websites to apply for junior developer jobs.</li>
+                                    </ul>
+                                    <span class="update-info">Updated: August 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-md-6">
+                            <div class="single-courses-box">
+                                <div class="image">
+                                    <img src="assets/img/courses/c-1.jpg" alt="courses-image">
+                                    <a routerLink="/courses-details" class="link-btn"></a>
+                                </div>
+                                <div class="content">
+                                    <h3><a routerLink="/courses-details">Mentor Map: A guided & supported Comprehensive English Course</a>  <span class="bookmark "><i class="fa-regular fa-bookmark"></i></span></h3>
+                                    <a routerLink="/profile" class="author">amsk-edtech </a><span class="bookmark"> <i class="fa-regular fa-heart"></i></span>
+                                    <div class="rating">
+                                        <div class="d-flex align-items center">
+                                            <span class="overall">5.0</span>
+                                            <div class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                            </div>
+                                            <span class="total">(1,600)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new-price">₹1250</span>
+                                        <span class="old-price">₹2000</span>
+                                    </div>
+                                </div>
+                                <div class="popover-quickview">
+                                    <h3><a routerLink="/courses-details">The Complete 2024 Web Development</a></h3>
+                                    <div class="stats d-flex align-items-center">
+                                        <span class="level">Category</span>
+                                        <span>75 Hours</span>
+                                    </div>
+                                    <p>Become a full-stack web developer with just one course. HTML, CSS, JavaScript, Node, React, MongoDB and more!</p>
+                                    <ul>
+                                        <li><i class="flaticon-check-mark"></i> Build fully websites and web apps for your startup or business.</li>
+                                        <li><i class="flaticon-check-mark"></i> Craft a portfolio websites to apply for junior developer jobs.</li>
+                                    </ul>
+                                    <span class="update-info">Updated: August 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-md-6">
+                            <div class="single-courses-box">
+                                <div class="image">
+                                    <img src="assets/img/courses/c-2.jpg" alt="courses-image">
+                                    <a routerLink="/courses-details" class="link-btn"></a>
+                                </div>
+                                <div class="content">
+                                    <h3><a routerLink="/courses-details">FUTURE READY: Accelerate your career & improve your life</a>  <span class="bookmark"><i class="fa-regular fa-bookmark"></i></span></h3>
+                                    <a routerLink="/profile" class="author">amsk-edtech </a><span class="bookmark"> <i class="fa-regular fa-heart"></i></span>
+                                    <div class="rating">
+                                        <div class="d-flex align-items center">
+                                            <span class="overall">4.0</span>
+                                            <div class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bx-star'></i>
+                                            </div>
+                                            <span class="total">(1,100)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new-price">₹5000</span>
+                                        <span class="old-price">₹10000</span>
+                                    </div>
+                                </div>
+                                <div class="popover-quickview">
+                                    <h3><a routerLink="/courses-details">Hands-on Artificial Neural Networks</a></h3>
+                                    <div class="stats d-flex align-items-center">
+                                        <span class="level">Category</span>
+                                        <span>75 Hours</span>
+                                    </div>
+                                    <p>Become a full-stack web developer with just one course. HTML, CSS, JavaScript, Node, React, MongoDB and more!</p>
+                                    <ul>
+                                        <li><i class="flaticon-check-mark"></i> Build fully websites and web apps for your startup or business.</li>
+                                        <li><i class="flaticon-check-mark"></i> Craft a portfolio websites to apply for junior developer jobs.</li>
+                                    </ul>
+                                    <span class="update-info">Updated: August 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-md-6">
+                            <div class="single-courses-box">
+                                <div class="image">
+                                    <img src="assets/img/courses/c-4.png" alt="courses-image">
+                                    <a routerLink="/courses-details" class="link-btn"></a>
+                                </div>
+                                <div class="content">
+                                    <h3><a routerLink="/courses-details">Build MEAN Stack Bootstrap Project From Scratch</a>  <span class="bookmark"><i class="fa-regular fa-bookmark"></i></span></h3>
+                                    <a routerLink="/profile" class="author">gauri-datey  </a><span class="bookmark"> <i class="fa-regular fa-heart"></i></span>
+                                    <div class="rating">
+                                        <div class="d-flex align-items center">
+                                            <span class="overall">5.0</span>
+                                            <div class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                            </div>
+                                            <span class="total">(550)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new-price">₹49</span>
+                                        <span class="old-price">₹189</span>
+                                    </div>
+                                </div>
+                                <div class="popover-quickview popover_quickview_right">
+                                    <h3><a routerLink="/courses-details">Ancient Indian Knowledge System (IKS)</a></h3>
+                                    <div class="stats d-flex align-items-center">
+                                        <span class="level">Category</span>
+                                        <span>75 Hours</span>
+                                    </div>
+                                    <p>Become a full-stack web developer with just one course. HTML, CSS, JavaScript, Node, React, MongoDB and more!</p>
+                                    <ul>
+                                        <li><i class="flaticon-check-mark"></i> Build fully websites and web apps for your startup or business.</li>
+                                        <li><i class="flaticon-check-mark"></i> Craft a portfolio websites to apply for junior developer jobs.</li>
+                                    </ul>
+                                    <span class="update-info">Updated: August 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-md-6">
+                            <div class="single-courses-box">
+                                <div class="image">
+                                    <img src="assets/img/courses/c-5.png" alt="courses-image">
+                                    <a routerLink="/courses-details" class="link-btn"></a>
+                                </div>
+                                <div class="content">
+                                    <h3><a routerLink="/courses-details">Ancient Indian Knowledge System (IKS)</a>  <span class="bookmark"><i class="fa-regular fa-bookmark"></i></span></h3>
+                                    <a routerLink="/profile" class="author">shankar-nene </a><span class="bookmark"> <i class="fa-regular fa-heart"></i></span>
+                                    <div class="rating">
+                                        <div class="d-flex align-items center">
+                                            <span class="overall">5.0</span>
+                                            <div class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                            </div>
+                                            <span class="total">(700)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new-price">₹79</span>
+                                        <span class="old-price">₹99</span>
+                                    </div>
+                                </div>
+                                <div class="popover-quickview">
+                                    <h3><a routerLink="/courses-details">Vue JS 3 - The Complete Guide Vue</a></h3>
+                                    <div class="stats d-flex align-items-center">
+                                        <span class="level">Category</span>
+                                        <span>75 Hours</span>
+                                    </div>
+                                    <p>Become a full-stack web developer with just one course. HTML, CSS, JavaScript, Node, React, MongoDB and more!</p>
+                                    <ul>
+                                        <li><i class="flaticon-check-mark"></i> Build fully websites and web apps for your startup or business.</li>
+                                        <li><i class="flaticon-check-mark"></i> Craft a portfolio websites to apply for junior developer jobs.</li>
+                                    </ul>
+                                    <span class="update-info">Updated: August 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-md-6">
+                            <div class="single-courses-box">
+                                <div class="image">
+                                    <img src="assets/img/courses/c-6.png" alt="courses-image">
+                                    <a routerLink="/courses-details" class="link-btn"></a>
+                                </div>
+                                <div class="content">
+                                    <h3><a routerLink="/courses-details">Science & Technology In Ancient India - Bharadwāja's Aṃśubodhinīśāstra</a>  <span class="bookmark"><i class="fa-regular fa-bookmark"></i></span></h3>
+                                    <a routerLink="/profile" class="author">shankar-nene  </a><span class="bookmark"> <i class="fa-regular fa-heart"></i></span>
+                                    <div class="rating">
+                                        <div class="d-flex align-items center">
+                                            <span class="overall">4.5</span>
+                                            <div class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star-half'></i>
+                                            </div>
+                                            <span class="total">(1,200)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new-price">₹89</span>
+                                        <span class="old-price">₹119</span>
+                                    </div>
+                                </div>
+                                <div class="popover-quickview">
+                                    <h3><a routerLink="/courses-details">The Drawing Course - to Advanced</a></h3>
+                                    <div class="stats d-flex align-items-center">
+                                        <span class="level">Category</span>
+                                        <span>75 Hours</span>
+                                    </div>
+                                    <p>Become a full-stack web developer with just one course. HTML, CSS, JavaScript, Node, React, MongoDB and more!</p>
+                                    <ul>
+                                        <li><i class="flaticon-check-mark"></i> Build fully websites and web apps for your startup or business.</li>
+                                        <li><i class="flaticon-check-mark"></i> Craft a portfolio websites to apply for junior developer jobs.</li>
+                                    </ul>
+                                    <span class="update-info">Updated: August 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-md-6">
+                            <div class="single-courses-box">
+                                <div class="image">
+                                    <img src="assets/img/courses/c-4.png" alt="courses-image">
+                                    <a routerLink="/courses-details" class="link-btn"></a>
+                                </div>
+                                <div class="content">
+                                    <h3><a routerLink="/courses-details">Advanced Cardiac Resuscitation Course Manual 2021</a> <span class="bookmark"><i class="fa-regular fa-bookmark"></i></span></h3>
+                                    <a routerLink="/profile" class="author">shivakumar-iyer </a><span class="bookmark"> <i class="fa-regular fa-heart"></i></span>
+                                    <div class="rating">
+                                        <div class="d-flex align-items center">
+                                            <span class="overall">5.0</span>
+                                            <div class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                            </div>
+                                            <span class="total">(1,000)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new-price">₹119</span>
+                                        <span class="old-price">₹189</span>
+                                    </div>
+                                </div>
+                                <div class="popover-quickview">
+                                    <h3><a routerLink="/courses-details">Node.js for Beginners: Zero to Hero</a></h3>
+                                    <div class="stats d-flex align-items-center">
+                                        <span class="level">Category</span>
+                                        <span>75 Hours</span>
+                                    </div>
+                                    <p>Become a full-stack web developer with just one course. HTML, CSS, JavaScript, Node, React, MongoDB and more!</p>
+                                    <ul>
+                                        <li><i class="flaticon-check-mark"></i> Build fully websites and web apps for your startup or business.</li>
+                                        <li><i class="flaticon-check-mark"></i> Craft a portfolio websites to apply for junior developer jobs.</li>
+                                    </ul>
+                                    <span class="update-info">Updated: August 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-md-6">
+                            <div class="single-courses-box">
+                                <div class="image">
+                                    <img src="assets/img/courses/c-3.jpg" alt="courses-image">
+                                    <a routerLink="/courses-details" class="link-btn"></a>
+                                </div>
+                                <div class="content">
+                                    <h3><a routerLink="/courses-details">Basic Life Support with Defibrillation Course Manual</a> <span class="bookmark"><i class="fa-regular fa-bookmark"></i></span></h3>
+                                    <a routerLink="/profile" class="author">shivakumar-iyer </a><span class="bookmark"> <i class="fa-regular fa-heart"></i></span>
+                                    <div class="rating">
+                                        <div class="d-flex align-items center">
+                                            <span class="overall">4.5</span>
+                                            <div class="star">
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star'></i>
+                                                <i class='bx bxs-star-half'></i>
+                                            </div>
+                                            <span class="total">(600)</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="new-price">₹100</span>
+                                        <span class="old-price">₹189</span>
+                                    </div>
+                                </div>
+                                <div class="popover-quickview popover_quickview_right">
+                                    <h3><a routerLink="/courses-details">Python for Finance: Data Analytics</a></h3>
+                                    <div class="stats d-flex align-items-center">
+                                        <span class="level">Category</span>
+                                        <span>75 Hours</span>
+                                    </div>
+                                    <p>Become a full-stack web developer with just one course. HTML, CSS, JavaScript, Node, React, MongoDB and more!</p>
+                                    <ul>
+                                        <li><i class="flaticon-check-mark"></i> Build fully websites and web apps for your startup or business.</li>
+                                        <li><i class="flaticon-check-mark"></i> Craft a portfolio websites to apply for junior developer jobs.</li>
+                                    </ul>
+                                    <span class="update-info">Updated: August 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </mdb-tab>
+            </mdb-tabs> -->
+        </div>
+    </div>
+    <div
+        class="shape2"
+        [ngClass]="{'style-two': router.url === '/vendor-certification-etraining'}"
+    >
+        <!-- <img src="assets/img/shape/shape2.png" alt="shape"> -->
+    </div>
+    <!-- <div class="shape3"><img src="assets/img/shape/shape3.png" alt="shape"></div> -->
+    <div
+        class="shape4"
+        [ngClass]="{'style-three': router.url === '/vendor-certification-etraining'}"
+    >
+        <!-- <img src="assets/img/shape/shape4.png" alt="shape"> -->
+    </div>
+</div>
