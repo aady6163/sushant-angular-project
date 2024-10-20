@@ -53,6 +53,7 @@ import { ThankYouPageComponent } from './components/pages/thank-you-page/thank-y
 import { VendorCertificationEtrainingDemoComponent } from './components/pages/vendor-certification-etraining-demo/vendor-certification-etraining-demo.component';
 import { ZoomMeetingsDetailsPageComponent } from './components/pages/zoom-meetings-details-page/zoom-meetings-details-page.component';
 import { ZoomMeetingsPageComponent } from './components/pages/zoom-meetings-page/zoom-meetings-page.component';
+import { BecomeAPartnerPageComponent } from './components/pages/become-a-partner-page/become-a-partner-page.component';
 
 const routes: Routes = [
     {path: '', component: ElearningSchoolDemoComponent},
@@ -94,6 +95,7 @@ const routes: Routes = [
     {path: 'zoom-meetings', component: ZoomMeetingsPageComponent},
     {path: 'zoom-meetings-details', component: ZoomMeetingsDetailsPageComponent},
     {path: 'become-an-instructor', component: BecomeAnInstructorPageComponent},
+    {path: 'become-a-partner', component: BecomeAPartnerPageComponent},
     {path: 'membership-levels', component: MembershipLevelsPageComponent},
     {path: 'products', component: ProductsPageComponent},
     {path: 'cart', component: CartPageComponent},

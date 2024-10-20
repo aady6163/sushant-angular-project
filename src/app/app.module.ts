@@ -112,6 +112,7 @@ import { FreeCoursesSinglePageComponent } from './components/pages/free-courses-
 import { PaidCoursesSinglePageComponent } from './components/pages/paid-courses-single-page/paid-courses-single-page.component';
 import { StickySidebarCoursesSinglePageComponent } from './components/pages/sticky-sidebar-courses-single-page/sticky-sidebar-courses-single-page.component';
 import { RelatedCoursesComponent } from './components/common/related-courses/related-courses.component';
+import { BecomeAPartnerPageComponent } from './components/pages/become-a-partner-page/become-a-partner-page.component';
 
 @NgModule({
     declarations: [
@@ -133,6 +134,7 @@ import { RelatedCoursesComponent } from './components/common/related-courses/rel
         StoriesComponent,
         FeedbackComponent,
         BecomeAnInstructorComponent,
+        BecomeAPartnerPageComponent,
         CategoriesComponent,
         TrustedCompaniesComponent,
         CoursesComponent,
