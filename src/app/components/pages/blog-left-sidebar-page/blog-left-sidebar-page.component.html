@@ -4,105 +4,153 @@
         <div class="page-title-content">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li>Blog Left Sidebar</li>
+                <li>Purchase</li>
             </ul>
-            <h1>Edla Latest Publications</h1>
+            <h1>Purchase Orders</h1>
         </div>
     </div>
 </div>
 
-<!-- Blog -->
-<div class="blog-area ptb-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-12">
-                <aside class="widget-area left-sidebar">
-                    <app-widget-sidebar></app-widget-sidebar>
-                </aside>
-            </div>
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    <div class="col-lg-12 col-md-6">
-                        <div class="single-blog-post">
-                            <div class="image">
-                                <a routerLink="/blog-details" class="d-block">
-                                    <img src="assets/img/blog/blog-img4.jpg" alt="blog-image">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <ul class="meta">
-                                    <li><a routerLink="/blog-grid">Web Dev</a></li>
-                                    <li>15th Sep, 2024</li>
-                                </ul>
-                                <h3><a routerLink="/blog-details">In person, virtual or hybrid: helpful tools for back to school</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            </div>
+<!-- Cart -->
+    <div class="cart-area ptb-100">
+        <div class="container">
+            <div class="products-details-tabs">
+                <mdb-tabs>
+                    <mdb-tab title="my Contact">
+                        <div class="cart-table table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Mobile</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Promocode Type</th>
+                                        <th scope="col">Promocode</th>
+                                        <th scope="col">User Discount %</th>
+                                        <th scope="col">Sales Commission %</th>
+                                        <th scope="col">Start Date</th>
+                                        <th scope="col">End Date</th>
+                                        <th scope="col">Parchased By Referrer ?</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        
+                                        <td>$199.00</td>
+                                        <td>$199.00</td>
+                                        <td>$199.00</td>
+                                        <td>$199.00</td>
+                                        <td>$199.00</td>
+                                        <td>$199.00</td>
+                                        <td>$199.00</td>
+                                        <td>$199.00</td>
+                                        <td>$199.00</td>
+                                        <td>$199.00</td>
+                                        <td>$199.00</td>
+                                        <td><a routerLink="/cart" class="remove"><i class='bx bx-trash-alt'></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div class="col-lg-12 col-md-6">
-                        <div class="single-blog-post">
-                            <div class="image">
-                                <a routerLink="/blog-details" class="d-block">
-                                    <img src="assets/img/blog/blog-img5.jpg" alt="blog-image">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <ul class="meta">
-                                    <li><a routerLink="/blog-grid">Teach</a></li>
-                                    <li>16th Sep, 2024</li>
-                                </ul>
-                                <h3><a routerLink="/blog-details">A new model for inclusive computer science education</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            </div>
+                    </mdb-tab>
+                    <mdb-tab title="Cash Incentive">
+                        <div class="cart-table table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Purchase Date</th>
+                                        <th scope="col">Material</th>
+                                        <th scope="col">Auther</th>
+                                        <th scope="col">Purchaser</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Payment Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="product-thumbnail">
+                                            <a routerLink="/product-details">
+                                                <img src="assets/img/products/products1.jpg" alt="item">
+                                                <h3>Black Men's T-Shirt</h3>
+                                            </a>
+                                        </td>
+                                        <td>$199.00</td>
+                                        <td class="product-quantity">
+                                            <div class="input-counter">
+                                                <span class="minus-btn"><i class="bx bx-minus"></i></span>
+                                                <input type="text" value="1">
+                                                <span class="plus-btn"><i class="bx bx-plus"></i></span>
+                                            </div>
+                                        </td>
+                                        <td>$199.00</td>
+                                        <td><a routerLink="/cart" class="remove"><i class='bx bx-trash-alt'></i></a></td>
+                                        <td class="product-quantity">
+                                            <div class="input-counter">
+                                                <span class="minus-btn"><i class="bx bx-minus"></i></span>
+                                                <input type="text" value="1">
+                                                <span class="plus-btn"><i class="bx bx-plus"></i></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div class="col-lg-12 col-md-6">
-                        <div class="single-blog-post">
-                            <div class="image">
-                                <a routerLink="/blog-details" class="d-block">
-                                    <img src="assets/img/blog/blog-img6.jpg" alt="blog-image">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <ul class="meta">
-                                    <li><a routerLink="/blog-grid">Learn</a></li>
-                                    <li>17th Sep, 2024</li>
-                                </ul>
-                                <h3><a routerLink="/blog-details">9 apps to help people sharpen their coding skills</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            </div>
+                    </mdb-tab>
+                    <mdb-tab title="Royalty">
+                        <div class="cart-table table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Purchase Date</th>
+                                        <th scope="col">Material</th>
+                                        <th scope="col">Auther</th>
+                                        <th scope="col">Purchaser</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Payment Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="product-thumbnail">
+                                            <a routerLink="/product-details">
+                                                <img src="assets/img/products/products1.jpg" alt="item">
+                                                <h3>Black Men's T-Shirt</h3>
+                                            </a>
+                                        </td>
+                                        <td>$199.00</td>
+                                        <td class="product-quantity">
+                                            <div class="input-counter">
+                                                <span class="minus-btn"><i class="bx bx-minus"></i></span>
+                                                <input type="text" value="1">
+                                                <span class="plus-btn"><i class="bx bx-plus"></i></span>
+                                            </div>
+                                        </td>
+                                        <td>$199.00</td>
+                                        <td><a routerLink="/cart" class="remove"><i class='bx bx-trash-alt'></i></a></td>
+                                        <td class="product-quantity">
+                                            <div class="input-counter">
+                                                <span class="minus-btn"><i class="bx bx-minus"></i></span>
+                                                <input type="text" value="1">
+                                                <span class="plus-btn"><i class="bx bx-plus"></i></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div class="col-lg-12 col-md-6">
-                        <div class="single-blog-post">
-                            <div class="image">
-                                <a routerLink="/blog-details" class="d-block">
-                                    <img src="assets/img/blog/blog-img1.jpg" alt="blog-image">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <ul class="meta">
-                                    <li><a routerLink="/blog-grid">Web Dev</a></li>
-                                    <li>18th Sep, 2024</li>
-                                </ul>
-                                <h3><a routerLink="/blog-details">Corporate online learning trends you still need to implement in 2024</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12">
-                        <div class="pagination-area">
-                            <div class="nav-links">
-                                <a routerLink="/blog-left-sidebar" class="prev page-numbers">prev</a>
-                                <span class="page-numbers current">1</span>
-                                <a routerLink="/blog-left-sidebar" class="page-numbers">2</a>
-                                <a routerLink="/blog-left-sidebar" class="page-numbers">3</a>
-                                <a routerLink="/blog-left-sidebar" class="next page-numbers">next</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </mdb-tab>
+                </mdb-tabs>
             </div>
         </div>
     </div>
+
+
+<div class="col-lg-12 col-md-12">
+    
 </div>
+<!-- 
+<div class="pb-100">
+    <app-trusted-companies></app-trusted-companies>
+</div> -->

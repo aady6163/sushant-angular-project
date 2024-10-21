@@ -1,1 +1,62 @@
 @import "../free-courses-single-page/free-courses-single-page.component.scss";
+.courses-details-area {
+    padding-bottom: 50px;
+    background-color: #f9f9f9;
+}
+.quiz-box {
+    // background-color: #fff;
+    padding: 20px;
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.quiz-header h4, .quiz-header p, .quiz-header h5 {
+    margin: 10px 0;
+}
+.quiz-header i {
+    color: #06518a;
+    margin-right: 5px;
+}
+.answer-section table {
+    width: 100%;
+    margin-top: 20px;
+}
+.answer-section table td {
+    // text-align: center;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    color: #555;
+}
+.options-section {
+    margin-top: 20px;
+}
+.options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.option-item {
+    background-color: #e0e0e0;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 60px;
+}
+.option-item:hover {
+    background-color: #c0c0c0;
+}
+.quiz-actions {
+    margin-top: 20px;
+}
+.quiz-actions button {
+    margin-right: 10px;
+}
+.rating-section {
+    margin-top: 20px;
+}
+.rating-section i {
+    color: #ffc107;
+}
+.rating-section span {
+    margin-left: 10px;
+    color: #555;
+}

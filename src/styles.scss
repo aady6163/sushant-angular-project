@@ -1609,7 +1609,7 @@ p {
 /*products-details-tabs*/
 .products-details-tabs {
     .nav {
-        display: block;
+        // display: block;
         padding-left: 0;
         list-style-type: none;
         margin-bottom: 30px !important;
@@ -2216,9 +2216,9 @@ p {
             padding-bottom: 5px;
 
             .nav-item {
-                display: block;
+                // display: block;
                 margin: {
-                    left: 0;
+                    // left: 0;
                     right: 0;
                     bottom: 15px;
                 };

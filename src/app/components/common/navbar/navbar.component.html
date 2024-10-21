@@ -550,22 +550,27 @@
                                 <a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Quizzes</a>
                             </li>
                             <li class="nav-item">
-                                <a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Free Exercises</a>
+                                <a routerLink="/courses-details-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Free Exercises</a>
                             </li>
                             <li class="nav-item">
-                                <a routerLink="/question-bank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Questions Banks</a>
+                                <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Questions Banks</a>
                             </li>
                             <li class="nav-item">
-                                <a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Customise Your Test</a>
+                                <a routerLink="/question-bank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Test Page</a>
                             </li>
-                            
+                            <li class="nav-item">
+                                <a routerLink="/courses-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Customise Your Test</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/courses-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Test History</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link">My Space</a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">My Learnings</a>
+                                <a routerLink="/blog-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">My Learnings</a>
                             </li>
                             <li class="nav-item">
                                 <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shared With Me</a>
@@ -593,21 +598,20 @@
                             <li class="nav-item"><a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Key Notes</a></li>
                             <li class="nav-item nav-item-title"><strong>Assessment</strong></li>
                             <li class="nav-item"><a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Quizzes</a></li>
-                            <li class="nav-item"><a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Free Exercises</a></li>
-                            <li class="nav-item"><a routerLink="/question-bank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Questions Banks</a></li>
-                            <li class="nav-item"><a routerLink="/courses-wide-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Customise Your Test</a></li>
+                            <li class="nav-item"><a routerLink="/courses-details-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Free Exercises</a></li>
+                            <li class="nav-item"><a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Questions Banks</a></li>
+                            <li class="nav-item"><a routerLink="/question-bank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Test Page</a></li>
+                            <li class="nav-item"><a routerLink="/courses-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Customise Your Test</a></li>
+                            <li class="nav-item"><a routerLink="/courses-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Test History</a></li>
                         </ul>
                     </li>
                 
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link" (click)="toggleDropdown('myspace')">My Space</a>
                         <ul class="dropdown-menu" [ngClass]="{'show': dropdownOpen['myspace']}">
-                            <li class="nav-item"><a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">My Learnings</a></li>
+                            <li class="nav-item"><a routerLink="/blog-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">My Learnings</a></li>
                             <li class="nav-item"><a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shared With Me</a></li>
                             <li class="nav-item"><a routerLink="/cart" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Purchases</a></li>
-                            <li class="nav-item"><a routerLink="/not-found" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Purchased Material</a></li>
-                            <li class="nav-item"><a routerLink="/thank-you" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Purchase Orders</a></li>
-                            <li class="nav-item"><a routerLink="/thank-you" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Cashback</a></li>
                         </ul>
                     </li>
                 
