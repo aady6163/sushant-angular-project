@@ -379,6 +379,71 @@
 
 /* Max width 767px */
 @media only screen and (max-width : 767px) {
+    .accordion-item {
+        margin-top: -34px;
+        margin-bottom: 15px;
+    }
+    .tab_bar_icon_box{
+        margin-top: -31px;
+        font-size: 30px;
+        color: #06518a;
+    }
+    .navbar-toggler {
+        color: var(--whiteColor);
+
+        .burger-menu {
+            span {
+                background: var(--whiteColor);
+            }
+        }
+    }
+    .navbar-light {
+        .navbar-toggler {
+            color: var(--blackColor);
+            font-size: inherit;
+            box-shadow: unset;
+            border: none;
+            padding: 0;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+
+            .burger-menu {
+                cursor: pointer;
+
+                span {
+                    height: 3px;
+                    width: 30px;
+                    margin: 5px 0;
+                    display: block;
+                    background: var(--blackColor);
+                }
+            }
+        }
+        &.active {
+            .navbar-toggler {
+                .burger-menu {
+                    span {
+                        &.top-bar {
+                            transform: rotate(45deg);
+                            transform-origin: 10% 10%;
+                        }
+                        &.middle-bar {
+                            opacity: 0;
+                        }
+                        &.bottom-bar {
+                            transform: rotate(-45deg);
+                            transform-origin: 10% 90%;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+            .collapse:not(.show) {
+                display: block;
+            }
+        }
+    }
 
     .products-details-desc {
         padding-left: 0;

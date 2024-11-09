@@ -1,1 +1,83 @@
 @import "../free-courses-single-page/free-courses-single-page.component.scss";
+
+.diff_btn{
+    float: right;
+    margin: 10px;
+    width: 100%;
+    padding-left: 27px;
+}
+.diff_btn button{
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.note-card {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: rgb(47, 47, 47); /* Default text color */
+    // display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    width: 100%;/* Ensures the card takes the full height */
+}
+
+/* Custom colors for each card */
+.card-erp { background-color: rgb(0 63 255 / 16%); } /* Blue */
+.card-benefits { background-color: rgb(174 238 215 / 79%); } /* Green */
+.card-vendors { background-color: rgb(255 183 0 / 25%); } /* Yellow */
+.card-terminology { background-color: rgb(224 118 108 / 41%); } /* Red */
+
+/* Ensure all cards are the same height within the row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    padding: 15px;
+}
+.col-md-6 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.queries-section {
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 40px;
+}
+
+.queries-header h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.note-text {
+    color: #666;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-buttons {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.comments-section .btn-warning {
+    background-color: #f6c23e;
+    border-color: #f6c23e;
+    margin-top: 10px;
+}
+

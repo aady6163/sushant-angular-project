@@ -44,7 +44,7 @@
                         <div class="rating">
                             <div class="d-flex align-items center">
                                 <span class="overall">3.5</span>
-                                <div class="star">
+                                <div class="star" (click)="openPopup('reviewModal')">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -88,7 +88,7 @@
                         <div class="rating">
                             <div class="d-flex align-items center">
                                 <span class="overall">5.0</span>
-                                <div class="star">
+                                <div class="star" (click)="openPopup('reviewModal')">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -132,7 +132,7 @@
                         <div class="rating">
                             <div class="d-flex align-items center">
                                 <span class="overall">4.0</span>
-                                <div class="star">
+                                <div class="star" (click)="openPopup('reviewModal')">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -176,7 +176,7 @@
                         <div class="rating">
                             <div class="d-flex align-items center">
                                 <span class="overall">5.0</span>
-                                <div class="star">
+                                <div class="star" (click)="openPopup('reviewModal')">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -222,3 +222,89 @@
         </div>
     </div>
 </div>
+
+
+
+<!-- Modal for Review Submission -->
+<div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewModalLabel">Material Suggestions: Ancient Indian Knowledge System (IKS)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Review submission form -->
+          <form>
+            <div class="mb-3">
+              <label for="rating" class="form-label">Submit Your Review/Suggestion:</label>
+              <!-- Star Rating -->
+              <div>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i> <!-- Example: 4 out of 5 stars -->
+              </div>
+              <!-- Text Area for Review -->
+              <textarea class="form-control mt-2" id="reviewText" rows="3" placeholder="Write your review here"></textarea>
+            </div>
+            <button type="submit" class="btn default-btn">Submit</button>
+          </form>
+  
+          <hr>
+  
+          <!-- Display reviews -->
+          <div class="reviews">
+            <h6>Reviews</h6>
+            <div class="review">
+              <strong>gauri-datey</strong> | Posted on 15 Feb 2023
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>Very valuable book for the young generation to know our glorious ancient wisdom</p>
+            </div>
+  
+            <div class="review">
+              <strong>nene-suneeta</strong> | Posted on 15 Feb 2023
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>I found the book very informative and something, I was not aware of...</p>
+            </div>
+  
+            <div class="review">
+              <strong>upalekar-ilina</strong> | Posted on 03 Mar 2023
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p>Fantastic Information</p>
+            </div>
+  
+            <!-- Pagination (Optional) -->
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link">«</a></li>
+                <li class="page-item active"><a class="page-link">1</a></li>
+                <li class="page-item"><a class="page-link">2</a></li>
+                <li class="page-item"><a class="page-link">3</a></li>
+                <li class="page-item"><a class="page-link">»</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,71 +1,135 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <section>
-  <div class="container2" [class.active]="isActive"> 
+  <div class="container2" [ngClass]="{'active': isActive}">
     <div class="user signinBx">
-      <!-- <div class="imgBx"><img src="assets/img/333.jpg" alt="" /></div> -->
       <div class="formBx">
-        <form (submit)="handleFormSubmit($event)">
-          <h2>Login</h2>
-          <div class="sign-with-g">
-            <a><img src="assets/img/google.png" class="google-logo" /> Login with Google</a>
+        <form (submit)="handleFormSubmit($event)" class="login-form">
+          <h2 class="text-center">Login</h2>
+          <div class="sign-with-g text-center">
+            <a class="btn btn-primary">
+              <img src="assets/img/google.png" class="google-logo-login me-2" /> Login with Google
+            </a>
           </div>
+          <p class="text-center">Or</p>
           <div class="form-group">
-            <label for="loginUsername">Username</label>
-            <input id="loginUsername" type="text" placeholder="Username"/>
+            <div for="loginUsername" class="form-label">Username<b>*</b></div>
+            <input id="loginUsername" type="text" class="form-control" placeholder="Username" required/>
           </div>
+          
           <div class="form-group">
-            <label for="loginPassword">Password</label>
-            <input id="loginPassword" type="password" placeholder="Password"/>
+            <div for="loginPassword" class="form-label">Password<b>*</b></div>
+            <div class="password-wrapper">
+              <input 
+                id="loginPassword" 
+                [type]="isPasswordVisible ? 'text' : 'password'" 
+                class="form-control" 
+                placeholder="Password" 
+                required
+              />
+              <i 
+                (click)="togglePasswordVisibility()" 
+                [class]="isPasswordVisible ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash'"
+                >
+              </i>
+            </div>
           </div>
-          <p class="Forgot-pass"><a class="anchor_tag" routerLink="/forgot-password">Forgot Password ?</a></p>
-          <button class="default-btn" type="submit">Login</button>
-          <p class="signup">
+          
+          
+          <p class="text-end"><a class="anchor_tag" routerLink="/forgot-password">Forgot Password?</a></p>
+          
+          <button class="default_btn w-100 p-1" type="submit">Login</button>
+          
+          <p class="text-center mt-3 lh-1">
             Don't have an account?
-            <a (click)="toggleForm()" class="anchor_tag">Registration.</a> 
           </p>
-          <p class="signup">
-            SignUp As <a class="anchor_tag">Learner</a> Or <a routerLink="/become-an-instructor" class="anchor_tag">Faculty</a> 
+          <p class="text-center mt-3 lh-1">
+            SignUp As <a class="anchor_tag" (click)="toggleForm()">Learner</a> Or 
+            <a class="anchor_tag" (click)="toggleForm()">Faculty</a>
           </p>
         </form>
       </div>
     </div>
     <div class="user signupBx">
       <div class="formBx">
-        <form (submit)="handleFormSubmit($event)"> 
-          <h2>Register Here</h2>
-          <div class="sign-with-g">
-            <a><img src="assets/img/google.png" class="google-logo" /> Register with Google</a>
+        <form (submit)="handleFormSubmit($event)" class="register-form">
+          <h2 class="text-center">Register Here</h2>
+          
+          <div class="sign-with-g text-center mb-3">
+            <a class="btn btn-primary">
+              <img src="assets/img/google.png" class="google-logo me-2" /> Register with Google
+            </a>
           </div>
-          <p class="or-text">Or</p>
+          <p class="text-center">Or</p>
           <div class="form-group">
-            <label for="registerUsername">Username</label>
-            <input id="registerUsername" type="text" placeholder="Username"/>
+            <div for="registerGivenName" class="form-label">GivenName<b>*</b></div>
+            <input id="registerGivenName" type="text" class="form-control" placeholder="GivenName" required/>
           </div>
+          
           <div class="form-group">
-            <label for="registerEmail">Email Address</label>
-            <input id="registerEmail" type="email" placeholder="Email Address"/>
+            <div for="registerEmail" class="form-label">Email Address<b>*</b></div>
+            <input id="registerEmail" type="email" class="form-control" placeholder="Email Address" required/>
           </div>
+          
           <div class="form-group">
-            <label for="registerPassword">Create Password</label>
-            <input id="registerPassword" type="password" placeholder="Create Password"/>
+            <div for="registerPassword" class="form-label">Create Password<b>*</b></div>
+            <div class="password-wrapper">
+              <input 
+                id="registerPassword" 
+                [type]="isPasswordVisible ? 'text' : 'password'" 
+                class="form-control" 
+                placeholder="Create Password" 
+                required 
+              />
+              <i 
+                (click)="togglePasswordVisibility()" 
+                [class]="isPasswordVisible ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash'"
+                >
+              </i>
+            </div>
           </div>
+          
+          
           <div class="form-group">
-            <label for="confirmPassword">Confirm Password</label>
-            <input id="confirmPassword" type="password" placeholder="Confirm Password"/>
+            <div for="confirmPassword" class="form-label">Confirm Password<b>*</b></div>
+            <div class="password-wrapper">
+              <input 
+                id="confirmPassword" 
+                [type]="isConfirmPasswordVisible ? 'text' : 'password'" 
+                class="form-control" 
+                placeholder="Confirm Password" 
+                required 
+              />
+              <i 
+                (click)="toggleConfirmPasswordVisibility()" 
+                [class]="isConfirmPasswordVisible ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash'" 
+                >
+              </i>
+            </div>
           </div>
-          <div>
-            <input class="facultyCheckbox" type="checkbox" id="facultyCheckbox" (change)="toggleTextarea($event)"/>
-            <label for="facultyCheckbox">Register as Faculty</label>
+          
+          
+          <!-- Fixed Checkbox -->
+          <div class="mb-3 form-check">
+            <input class="form_check_input" type="checkbox" id="facultyCheckbox" (change)="toggleTextarea($event)" />
+            <span class="form-check-label" for="facultyCheckbox">Register as Faculty</span>
           </div>
-          <textarea class="facultytextarea" *ngIf="isFaculty" placeholder="Enter..."></textarea>
-          <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
-          <button class="default-btn" type="submit">Register</button>
-          <p class="signup">
-            Already have an account?
-            <a (click)="toggleForm()" class="anchor_tag">Sign in.</a> 
+    
+          <!-- Fixed Textarea -->
+          <div class="form-group" *ngIf="isFaculty">
+            <textarea class="form-control" placeholder="Enter faculty details..."></textarea>
+          </div>
+          
+          <div class="g-recaptcha mb-3" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+          
+          <button class="default_btn w-100 p-1" type="submit">Register</button>
+        
+          <p class="text-center mt-3">
+            Already have an account? 
+            <a (click)="toggleForm()" class="anchor_tag">Sign in.</a>
           </p>
         </form>
       </div>
-      <!-- <div class="imgBx"><img src="assets/img/666.jpg" alt="" /></div> -->
     </div>
+    
   </div>
 </section>

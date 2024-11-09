@@ -1,12 +1,5 @@
-.quiz-container {
-  width: 60%;
-  margin: 0 auto;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #f8f9fa;
-}
 
+@media only screen and (min-width: 768px) {
 .question-card {
   margin-top: 20px;
 }
@@ -27,10 +20,13 @@
   border-radius: 4px;
 }
 
+.question-buttons button{
+  margin: 2px;
+}
 
 
 .quiz-container {
-    width: 70%;
+    width: 95%;
     margin: 50px auto;
     padding: 20px;
     background-color: #f8f9fa;
@@ -86,13 +82,9 @@
       }
   
       .navigation-buttons {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 30px;
-      
-        .btn {
-          width: 32%; // Adjust to fit three buttons neatly
-        }
+        // display: flex;
+        // justify-content: space-between;
+        // margin-top: 30px;
       }
       
       .navigation-buttons-2 {
@@ -107,7 +99,9 @@
       
     
     }
-  
+    .navigation-buttons  .btn-mar {
+      margin-left: 10px;
+    }
     .footer {
       display: flex;
       justify-content: space-between;
@@ -115,13 +109,14 @@
       margin-top: 20px;
   
       .legend {
-        display: flex;
+        // display: flex;
         gap: 10px;
   
         .legend-item {
           padding: 5px 10px;
           border-radius: 4px;
           font-size: 0.85rem;
+          margin-left: 2px;
   
           &.submitted {
             background-color: #28a745;
@@ -171,5 +166,156 @@
   
   .task {
     margin-bottom: 5px;
+  }
+  
+  .question_buttons_desktop {
+    display: block;
+  }
+  .question_buttons_mobile {
+    display: none;
+  }
+}
+  @media only screen and (max-width: 767px) {
+
+    .question_buttons_desktop {
+      display: none;
+    }
+    .question_buttons_mobile {
+      display: block;
+    }
+    .navigation-buttons  .btn-mar {
+      margin-top: 10px;
+    }
+   
+    .quiz-container {
+      width: 100%;
+      margin: 20px auto;
+      padding: 10px;
+      box-shadow: none;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+  
+    .header .time-left {
+      font-size: 0.9rem;
+    }
+  
+    .question-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .question-buttons button {
+      width: 40px;
+      height: 40px;
+      margin: 4px;
+      font-size: 0.9rem;
+    }
+  
+    .question-card {
+      padding: 10px;
+      margin-top: 15px;
+      box-shadow: none;
+    }
+  
+    .question-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .question-header span {
+      margin-bottom: 5px;
+      font-size: 0.9rem;
+    }
+  
+    .question-text {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  
+    .options-list .form-check {
+      font-size: 0.9rem;
+    }
+  
+    .navigation-buttons {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  
+    .navigation-buttons .btn {
+      width: 96%;
+    }
+  
+    .navigation-buttons-2 {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  
+    .navigation-buttons-2 .btn {
+      width: 48%;
+      margin-right: 0;
+    }
+  
+    .footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .legend-item {
+      font-size: 0.75rem;
+      padding: 3px 6px;
+    }
+  
+    .legend-item.submitted {
+      background-color: #28a745;
+    }
+  
+    .legend-item.mark-review {
+      background-color: #ffc107;
+    }
+  
+    .legend-item.skip-question {
+      background-color: #dc3545;
+    }
+  
+    .legend-item.selected {
+      background-color: #6c757d;
+    }
+  
+    .btn-warning {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .answer-box {
+      min-height: 30px;
+      font-size: 0.9rem;
+    }
+  
+    .answer {
+      padding: 5px;
+      font-size: 0.9rem;
+    }
+  
+    .task {
+      font-size: 0.9rem;
+    }
   }
   

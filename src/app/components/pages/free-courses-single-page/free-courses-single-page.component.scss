@@ -1,7 +1,32 @@
 .courses-details-area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
     &.bg-color {
-        background-color: var(--blackColor);
+        background-color: #06518a;
+        
     }
+}
+.default_reset_btn{
+    width: 100%;
+}
+.selected_btn{
+    background-color: #a3deb1;
+    border: 1px solid #a3deb1;
+    color: #514747;
+}
+.selected_btn:hover{
+    background-color: #39b523;
+    border: 1px solid #39b523;
+    color: #fff;
+}
+.non_selected_btn{
+    background-color: #08a9e6;
+    border: 1px solid #08a9e6;
+    color: #fff;
+}
+.category_details{
+    color: #fff;
 }
 .courses-details-header {
     .rating {
@@ -51,7 +76,7 @@
                 left: 45px;
             };
             i {
-                color: var(--secondaryColor);
+                color: #08a9e6;
                 position: absolute;
                 line-height: 1;
                 left: -2px;
@@ -84,13 +109,6 @@
     }
     .default-btn {
         margin-top: 30px;
-        color: var(--whiteColor);
-        background-color: var(--primaryColor);
-        
-        &:hover {
-            background-color: var(--secondaryColor);
-            border-color: var(--secondaryColor);
-        }
     }
 }
 .courses-details-header-two {
@@ -119,7 +137,7 @@
                 left: 45px;
             };
             i {
-                color: var(--secondaryColor);
+                color: #08a9e6;
                 position: absolute;
                 line-height: 1;
                 left: -2px;
@@ -187,6 +205,8 @@
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+    top: 147px;
+    right: -190px;
     
     img {
         border-radius: 5px;
@@ -579,122 +599,7 @@
                 color: red;
             }
         }
-        form {
-            margin-top: 20px;
-            text-align: start;
-
-            .form-group {
-                margin-bottom: 25px;
-                text-align: start;
-                
-                .form-control {
-                    background-color: #f9f9f9;
-                    font-size: var(--fontSize);
-                    color: var(--blackColor);
-                    box-shadow: unset;
-                    border-radius: 0;
-                    height: 50px;
-                    width: 100%;
-                    border: 0;
-                    padding: {
-                        left: 18px;
-                        right: 18px;
-                    };
-                    &::placeholder {
-                        color: var(--paragraphColor);
-                        transition: var(--transition);
-                    }
-                    &:focus {
-                        &::placeholder {
-                            color: transparent;
-                        }
-                    }
-                }
-                textarea.form-control {
-                    height: auto !important;
-                    padding-top: 18px;
-                }
-            }
-            .rating {
-                text-align: start;
-                overflow: hidden;
-                max-width: 115px;
-                margin: {
-                    top: -5px;
-                    bottom: 20px;
-                };
-                label {
-                    width: 23px;
-                    height: 23px;
-                    float: right;
-                    cursor: pointer;
-                    position: relative;
-
-                    &:not(:first-of-type) {
-                        padding-right: 5px;
-                    }
-                    &:before {
-                        transition: var(--transition);
-                        content: "\2605";
-                        color: #cccccc;
-                        font-size: 27px;
-                        line-height: 1;
-                    }
-                }
-                input {
-                    display: none;
-                }
-                input:checked ~ label:before, &:not(:checked) > label:hover:before, &:not(:checked) > label:hover ~ label:before {
-                    color: #f6b500;
-                }
-            }
-            .form-check {
-                color: var(--paragraphColor);
-                margin-top: 5px;
-
-                a {
-                    color: var(--secondaryColor);
-        
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-                .form-check-input {
-                    margin-top: 0.18em;
-                    box-shadow: unset !important;
-        
-                    &[type=checkbox] {
-                        border-radius: 0;
-                    }
-                    &:checked {
-                        background-color: var(--primaryColor);
-                        border-color: var(--primaryColor);
-                    }
-                    &:focus {
-                        border-color: var(--primaryColor);
-                    }
-                }
-            }
-            button {
-                border: none;
-                margin-top: 20px;
-                text-align: center;
-                display: inline-block;
-                color: var(--whiteColor);
-                background-color: var(--primaryColor);
-                transition: var(--transition);
-                padding: 11px 40px;
-                box-shadow: unset;
-                font: {
-                    size: var(--fontSize);
-                    weight: 600;
-                };
-                &:hover {
-                    background-color: var(--secondaryColor);
-                    color: var(--whiteColor);
-                }
-            }
-        }
+     
     }
     &.style-two {
         margin-top: 60px;
@@ -746,7 +651,7 @@
                 color: var(--blackColor);
 
                 i {
-                    color: var(--secondaryColor);
+                    color: #08a9e6;
                     position: absolute;
                     font-size: 19px;
                     top: 2px;
@@ -779,22 +684,9 @@
         .default-btn {
             display: block;
             text-align: center;
-            color: var(--whiteColor);
-            background-color: var(--primaryColor);
-            
-            &:hover {
-                background-color: var(--blackColor);
-                border-color: var(--blackColor);
-            }
+          
             &:not(:first-child) {
                 margin-top: 15px;
-                border-color: var(--secondaryColor);
-                background-color: var(--secondaryColor);
-
-                &:hover {
-                    background-color: var(--blackColor);
-                    border-color: var(--blackColor);
-                }
             }
         }
     }
@@ -1068,6 +960,12 @@
     }
     .courses-details-image {
         margin-top: 30px;
+        text-align: center;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        top: 20px;
+        right: 0px;
 
         .content {
             .popup-video {
@@ -1195,25 +1093,7 @@
             h3 {
                 font-size: 18px;
             }
-            form {
-                .form-group {
-                    .form-control {
-                        font-size: 14px;
-                        padding: {
-                            left: 15px;
-                            right: 15px;
-                        };
-                    }
-                    textarea.form-control {
-                        padding-top: 15px;
-                    }
-                }
-                button {
-                    padding: 11px 30px;
-                    margin-top: 15px;
-                    font-size: 14px;
-                }
-            }
+            
             .form-check {
                 .form-check-input {
                     margin-top: 0.20em;
@@ -1227,6 +1107,7 @@
     .courses-details-info {
         padding: 15px;
         margin-top: 30px;
+        
 
         .info {
             li {
@@ -1362,23 +1243,7 @@
             h3 {
                 font-size: 20px;
             }
-            form {
-                .form-group {
-                    .form-control {
-                        font-size: 15px;
-                        padding: {
-                            left: 15px;
-                            right: 15px;
-                        };
-                    }
-                    textarea.form-control {
-                        padding-top: 15px;
-                    }
-                }
-                button {
-                    font-size: 15px;
-                }
-            }
+          
         }
         #instructor {
             margin: {

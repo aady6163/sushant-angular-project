@@ -2,8 +2,23 @@
 <div class="products-details-area ptb-100">
     <div class="container">
         <div class="row align-items-center">
+
+            <button class="navbar-toggler" type="button">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
             
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-12 tab_bar_icon_box" (click)="toggleTabBar()" [ngClass]="{'d-lg-none': true, 'd-block': true}">
+                <i 
+                  class="fa-solid" 
+                  [ngClass]="isTabBarVisible ? 'fa-circle-xmark' : 'fa-square-poll-horizontal'">
+                </i>
+            </div>
+              
+            <div class="col-lg-4 col-md-12 tab_bar" [ngClass]="{'d-block': isTabBarVisible, 'd-none d-lg-block': !isTabBarVisible}">
                 <div class="products-details-desc">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">

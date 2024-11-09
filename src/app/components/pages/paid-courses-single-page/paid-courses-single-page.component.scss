@@ -52,11 +52,24 @@
 }
 .rating-section {
     margin-top: 20px;
+    margin-left: 20px;
 }
-.rating-section i {
+.rating-section .fa-star{
     color: #ffc107;
 }
 .rating-section span {
     margin-left: 10px;
     color: #555;
+}
+.options-list{
+   list-style: none;
+}
+.options-list li{
+    line-height: 42px;
+}
+.options-list li input{
+    margin: 8px 10px;
+}
+.question_list li{
+    color: #808292;
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+declare var bootstrap: any;
 
 @Component({
     selector: 'app-navbar',
@@ -36,4 +37,12 @@ export class NavbarComponent implements OnInit {
         this.dropdownOpen[menu] = !this.dropdownOpen[menu];
     }
 
+
+    openPopup(popupType: string): void {
+        let modal;
+        if (popupType === 'advanceSearch') {
+          modal = new bootstrap.Modal(document.getElementById('advanceSearchModal'));
+        } 
+        modal?.show();
+      }
 }

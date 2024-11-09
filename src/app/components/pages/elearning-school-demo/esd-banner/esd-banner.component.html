@@ -1,43 +1,197 @@
 <div class="main-banner-area banner_color">
     <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
-                Banner Section 
-            </div>    
-        </div>    
-    </div>    
-</div>    
-<div class="main-banner-area">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">Banner Section</div>
+      </div>
+    </div>
+  </div>
+  <div class="main-banner-area">
     <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
-                <div class="main-banner-content">
-                    <h1>Empowering Instructors, Elevating Learners </h1>
-                    <p>Our vision is to empower a billion minds by collaborating with educational institutions, experts and organizations globally, providing them with the resources and support needed to unlock their full potential.</p>
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+          <div class="main-banner-content">
+            <h1>Empowering Instructors, Elevating Learners</h1>
+            <p>Our vision is to empower a billion minds by collaborating with educational institutions, experts, and organizations globally, providing them with the resources and support needed to unlock their full potential.</p>
+            <!-- Add click events to buttons -->
+            <button class="default_btn" (click)="openPopup('referFriend')">Contact Us</button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="main-banner-image">
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6">
+                <div class="image">
+                  <img src="assets/img/banner/banner-img1.png" alt="banner-image">
                 </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="image">
+                  <img src="assets/img/banner/banner-img2.png" alt="banner-image">
+                </div>
+                <div class="image">
+                  <img src="assets/img/banner/banner-img3.jpg" alt="banner-image">
+                </div>
+              </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="main-banner-image">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="image">
-                                <img src="assets/img/banner/banner-img1.png" alt="banner-image">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="image">
-                                <img src="assets/img/banner/banner-img2.png" alt="banner-image">
-                            </div>
-                            <div class="image">
-                                <img src="assets/img/banner/banner-img3.jpg" alt="banner-image">
-                            </div>
-                        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="referFriendModal" tabindex="-1" aria-labelledby="referFriendLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="referFriendLabel">Refer Users</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- Row for Promocode Type -->
+            <div class="row mb-3">
+              <label class="form-label">Promocode Type <b>*</b></label>
+              <div class="col-md-12 mt-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="promocodeType" id="specificUser" value="specific">
+                  <label class="form-check-label" for="specificUser">Specific to User</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="promocodeType" id="generic" value="generic">
+                  <label class="form-check-label" for="generic">Generic</label>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Row for Select Type and Material -->
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div for="selectType" class="form-label">Select a Type <b>*</b></div>
+                <select class="form-select" id="selectType">
+                  <option value="">Select a Type</option>
+                  <!-- Add type options here -->
+                </select>
+              </div>
+              <div class="col-md-6">
+                <div for="selectMaterial" class="form-label">Select Material <b>*</b></div>
+                <select class="form-select" id="selectMaterial">
+                  <option value="">Select Material</option>
+                  <!-- Add material options here -->
+                </select>
+              </div>
+            </div>
+  
+            <!-- Row for Given Name, User Email, and Mobile No -->
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <div for="givenName" class="form-label">Given Name <b>*</b></div>
+                <input type="text" class="form-control" id="givenName" placeholder="Name">
+              </div>
+              <div class="col-md-4">
+                <div for="userEmail" class="form-label">Email <b>*</b></div>
+                <input type="email" class="form-control" id="userEmail" placeholder="Email">
+              </div>
+              <div class="col-md-1">
+                <div for="mobileNo" class="form-label">Code</div>
+                  <input type="tel" class="form-control coutry_code" value="+91">
+              </div>
+              <div class="col-md-3 ml-1">
+                <div for="mobileNo" class="form-label">Mobile No <b>*</b></div>
+                  <input type="tel" class="form-control" id="mobileNo" placeholder="Mobile Number">
+              </div>
+            </div>
+  
+            <!-- Row for Commission, Discount and Validity -->
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <div for="commission" class="form-label">Your Commission% <b>*</b></div>
+                <input type="number" class="form-control" id="commission" value="46" min="1" max="100">
+              </div>
+              <div class="col-md-4">
+                <div for="userDiscount" class="form-label">User Discount% <b>*</b></div>
+                <input type="number" class="form-control" id="userDiscount" value="50" min="1" max="95">
+              </div>
+              <div class="col-md-4">
+                <div for="validPeriod" class="form-label">Valid For Period (In Days) <b>*</b></div>
+                <input type="number" class="form-control" id="validPeriod" value="365" min="1" max="365">
+              </div>
+            </div>
+  
+            <!-- Add Button -->
+            <div class="mb-3">
+              <button type="button" class="btn default_btn">Add</button>
+              <button type="button" class="btn default_reset_btn">Reset</button>
+            </div>
+  
+            <!-- Table for List of Referrals -->
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th>Title</th>
+                            <th>Promocode Type</th>
+                            <th>Promocode</th>
+                            <th>User Discount %</th>
+                            <th>Sales Commission %</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Purchased By Referrer?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NA</td>
+                            <td>NA</td>
+                            <td>NA</td>
+                            <td>Course-Self Quest – Comprehensive English Course</td>
+                            <td>MATERIAL</td>
+                            <td>CFTQ-101</td>
+                            <td>67</td>
+                            <td>29</td>
+                            <td>20 Aug 2024</td>
+                            <td>20 Aug 2025</td>
+                            <td>NA</td>
+                        </tr>
+                        <tr>
+                          <td>NA</td>
+                          <td>NA</td>
+                          <td>NA</td>
+                          <td>Course-Self Quest – Comprehensive English Course</td>
+                          <td>MATERIAL</td>
+                          <td>CFTQ-101</td>
+                          <td>67</td>
+                          <td>29</td>
+                          <td>20 Aug 2024</td>
+                          <td>20 Aug 2025</td>
+                          <td>NA</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="pagination-area">
+                    <div class="nav-links">
+                        <a routerLink="/blog-grid" class="prev page-numbers">prev</a>
+                        <span class="page-numbers current">1</span>
+                        <a routerLink="/blog-grid" class="page-numbers">2</a>
+                        <a routerLink="/blog-grid" class="page-numbers">3</a>
+                        <a routerLink="/blog-grid" class="next page-numbers">next</a>
                     </div>
                 </div>
             </div>
+          </form>
         </div>
+      </div>
     </div>
-    <!-- <div class="shape1"><img src="assets/img/shape/shape1.png" alt="shape"></div>
-    <div class="shape2" data-speed="0.10" data-revert="true"><img src="assets/img/shape/shape2.png" alt="shape"></div>
-    <div class="shape3" data-speed="0.10" data-revert="true"><img src="assets/img/shape/shape3.png" alt="shape"></div> -->
-</div>
+  </div>
+
+
+
+  
+  
+  

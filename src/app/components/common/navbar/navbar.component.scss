@@ -580,21 +580,36 @@
                     }
                 }
             }
-            button {
+            .search_btn {
                 background-color: transparent;
                 transition: var(--transition);
                 color: var(--primaryColor);
                 position: absolute;
                 font-size: 22px;
-                right: 15px;
+                right: 42px;
                 padding: 0;
                 border: 0;
                 top: 8px;
 
-                &:hover {
-                    color: var(--secondaryColor);
-                }
+                // &:hover {
+                //     color: var(--secondaryColor);
+                // }
             }
+        }
+        .pop_btn {
+            background-color: transparent;
+            transition: var(--transition);
+            color: var(--primaryColor);
+            position: absolute;
+            font-size: 22px;
+            right: 8px;
+            padding: 0;
+            border: 0;
+            top: 5px;
+
+            // &:hover {
+            //     color: var(--secondaryColor);
+            // }
         }
         .others-option {
             margin-left: 30px;
@@ -926,7 +941,7 @@
                 button {
                     font-size: 20px;
                     right: 12px;
-                    top: 10px;
+                    top: 6px;
                 }
             }
             .navbar-nav {

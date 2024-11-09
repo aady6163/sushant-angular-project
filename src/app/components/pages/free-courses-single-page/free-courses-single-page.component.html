@@ -1,8 +1,9 @@
-<div class="courses-details-area ptb-100 bg-color">
+<div class="courses-details-area bg-color">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="courses-details-header">
+                    <h4 class="category_details">Category <i class="fa-solid fa-chevron-right"></i> Category 1 <i class="fa-solid fa-chevron-right"></i> Category 2</h4>
                     <div class="rating">
                         <i class='bx bxs-star'></i>
                         <i class='bx bxs-star'></i>
@@ -27,21 +28,13 @@
                         </li>
                     </ul>
                     <a routerLink="/profile-authentication" class="default-btn">Enroll Now</a>
+                    <a style="margin-left: 10px;" routerLink="/product-details" class="default-btn">Details</a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="courses-details-image">
-                    <img src="assets/img/courses/c-1.jpg" alt="image">
-                    <div class="content">
-                        <button
-                            type="button"
-                            (click)="openPopup()"
-                            class="popup-video"
-                        >
-                            <i class='bx bx-play'></i>
-                        </button>
-                        <span>Course Preview</span>
-                    </div>
+                   <button class="btn non_selected_btn">Selected</button>
+                   <button class="btn selected_btn">Not Selected</button>
                 </div>
             </div>
         </div>
@@ -356,27 +349,21 @@
                                 <p class="comment-notes">Your email address will not be published. Required fields are marked <span>*</span></p>
                                 <form>
                                     <div class="row">
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="rating">
-                                                <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-                                                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-                                                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-                                                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-                                                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
-                                            </div>
-                                        </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-group">
+                                                <div class="form-label">GivenName<b>*</b></div>
                                                 <input type="text" class="form-control" placeholder="Name *">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="form-group">
+                                                <div class="form-label">Email<b>*</b></div>
                                                 <input type="email" class="form-control" placeholder="Email *">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12">
                                             <div class="form-group">
+                                                <div class="form-label">Review<b>*</b></div>
                                                 <textarea placeholder="Your review" class="form-control" cols="30" rows="6"></textarea>
                                             </div>
                                         </div>
@@ -389,7 +376,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12">
-                                            <button type="submit">Submit</button>
+                                            <button type="submit" class="default-btn">Submit</button>
                                         </div>
                                     </div>
                                 </form>
@@ -453,9 +440,8 @@
                         </li>
                     </ul>
                     <div class="btn-box">
-                        <button type="submit" class="default-btn d-block w-100">Add to Cart</button>
-                        <a routerLink="/profile-authentication" class="default-btn">Buy Now</a>
-                        <a routerLink="/product-details" class="default-btn">Details</a>
+                        <!-- <button type="submit" class="default-btn d-block w-100">Add to Cart</button> -->
+                        <a routerLink="/courses-category" class="default-btn diff_color">Buy Now</a>
                     </div>
                     <div class="courses-share">
                         <div class="share-info">
@@ -476,17 +462,5 @@
     </div>
 </div>
 
-<!-- Video Popup -->
-<div
-    class="video-popup"
-    *ngIf="isOpen"
->
-    <div class="popup-inner">
-        <iframe src="https://www.youtube.com/embed/ODfy2YIKS1M" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <button (click)="closePopup()" type="button" class="close-btn">
-            <i class='bx bx-x'></i>
-        </button>
-    </div>
-</div>
 
 <app-related-courses></app-related-courses>
