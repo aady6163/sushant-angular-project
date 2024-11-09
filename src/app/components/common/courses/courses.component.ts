@@ -1,13 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Router } from '@angular/router';
-
+import {  ViewChild, ElementRef } from '@angular/core';
 @Component({
     selector: 'app-courses',
     templateUrl: './courses.component.html',
     styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent implements OnInit {
+
+
+  @ViewChild('scrollContainerRef', { static: false }) scrollContainerRef!: ElementRef;
+  
+  scrollContainer(direction: number) {
+    const container = this.scrollContainerRef.nativeElement;
+    const scrollAmount = container.offsetWidth; // Scroll by container width
+    container.scrollLeft += direction * scrollAmount;
+  }
     isBookmarked = false;
 
     constructor(public router: Router) { }
@@ -48,4 +57,6 @@ export class CoursesComponent implements OnInit {
             }
         }
     }
+
+   
 }

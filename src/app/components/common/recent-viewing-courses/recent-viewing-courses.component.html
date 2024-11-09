@@ -5,10 +5,11 @@
             <p>Explore all of our courses and pick your suitable ones to enroll and start learning with us!</p>
             <a routerLink="/courses-grid" class="default-btn">View All Courses</a>
         </div>
+
         <div class="courses-tabs">
             <!-- <mdb-tabs>
                 <mdb-tab title="All Courses"> -->
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                             <div class="single-courses-box">
                                 <div class="image">
@@ -124,10 +125,54 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 <!-- </mdb-tab>
             </mdb-tabs> -->
+
+
+
+            <button class="carousel-arrow left-arrow" (click)="scrollCarousel(-1)">&#10094;</button>
+
+            <div class="courses-carousel">
+              
+            
+                <div class="scroll-container" #scrollContainer>
+                    <div class="scroll-container-row">
+                        <div class="single-courses-box" *ngFor="let course of courses">
+                            <div class="image">
+                                <img [src]="course.image" alt="courses-image">
+                                <a routerLink="/courses-details" class="link-btn"></a>
+                            </div>
+                            <div class="content">
+                                <h3><a routerLink="/courses-details">{{ course.title }}</a></h3>
+                                <a routerLink="/profile" class="author">{{ course.author }}</a>
+                                <div class="rating">
+                                    <div class="d-flex align-items-center">
+                                        <span class="overall">{{ course.rating }}</span>
+                                        <div class="star">
+                                            <i *ngFor="let star of course.stars" class="bx bxs-star"></i>
+                                        </div>
+                                        <span class="total">({{ course.reviews }})</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span class="new-price">{{ course.newPrice }}</span>
+                                    <span *ngIf="course.oldPrice" class="old-price">{{ course.oldPrice }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Right Arrow -->
+            </div>
+            
+            <button class="carousel-arrow right-arrow" (click)="scrollCarousel(1)">&#10095;</button>
         </div>
+
+
+       
+        
     </div>
     <div
         class="shape5"
