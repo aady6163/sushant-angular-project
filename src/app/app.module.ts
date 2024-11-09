@@ -114,6 +114,7 @@ import { StickySidebarCoursesSinglePageComponent } from './components/pages/stic
 import { RelatedCoursesComponent } from './components/common/related-courses/related-courses.component';
 import { BecomeAPartnerPageComponent } from './components/pages/become-a-partner-page/become-a-partner-page.component';
 import { QuestionBanksComponent } from './components/pages/question-banks/question-banks.component';
+import { ArticleDetailsComponent } from './components/pages/article-details/article-details.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
@@ -220,7 +221,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
         FreeCoursesSinglePageComponent,
         PaidCoursesSinglePageComponent,
         StickySidebarCoursesSinglePageComponent,
-        RelatedCoursesComponent
+        RelatedCoursesComponent,
+        ArticleDetailsComponent
     ],
     imports: [
         FormsModule,

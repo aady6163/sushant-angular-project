@@ -41,8 +41,7 @@
 
 
 .products-details-desc {
-    // padding-left: 15px;
-    // margin-top: -244px;
+
 
     h3 {
         margin-bottom: 17px;
@@ -161,6 +160,10 @@
         }
     }
 }
+
+
+
+
 .products-details-tabs {
     margin-top: 50px;
 
@@ -602,3 +605,17 @@
 
 /* Min width 1600px */
 @media only screen and (min-width: 1600px) {}
+
+
+@media(max-width:781px){
+    .tab_bar{
+        z-index: 1; position: fixed; margin-top: 20px;
+    }
+}
+
+
+.list-box-1{
+background-color: #E6F8FF !important;
+border: 0.1px solid black;
+
+}

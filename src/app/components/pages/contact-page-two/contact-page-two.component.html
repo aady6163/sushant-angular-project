@@ -80,6 +80,7 @@
 </div>
 
 
+
 <!-- Queries Section -->
 <div class="queries-section pt-4">
     <div class="container">
@@ -98,12 +99,80 @@
         <!-- Submit and Reset Buttons -->
         <div class="form-buttons d-flex justify-content-start">
             <button type="submit" class="btn default_btn mr-2">Submit</button>
-            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button type="reset" class="btn default_reset_btn w-12">Reset</button>
         </div>
 
         <!-- Comments Section -->
         <div class="comments-section pt-4">
-            <button type="button" class="btn btn-warning">LATEST COMMENTS</button>
+            <button type="button" class="btn default_btn">LATEST COMMENTS</button>
+        </div>
+
+        <!-- Comments List -->
+        <div class="comments-list pt-3">
+            <!-- Single Comment Item -->
+            <div class="row py-3 border-bottom">
+                <div class="col-2 col-md-1">
+                    <!-- Placeholder for User Image -->
+                    <img src="path/to/user-image.jpg" alt="User Image" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-10 col-md-11">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="mb-0">James Anderson</h5>
+                        <div class="rating">
+                            <!-- Star Rating -->
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                    <p class="text-muted">Very well built theme, couldn’t be happier with it. Can’t wait for future updates to see what else they add in.</p>
+                </div>
+            </div>
+
+            <!-- Repeat Comment Items as Needed -->
+            <div class="row py-3 border-bottom">
+                <div class="col-2 col-md-1">
+                    <img src="path/to/user-image.jpg" alt="User Image" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-10 col-md-11">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="mb-0">Sarah Taylor</h5>
+                        <div class="rating">
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        </div>
+                    </div>
+                    <p class="text-muted">Was really easy to implement and they quickly answer my additional questions!</p>
+                </div>
+            </div>
+
+            <div class="row py-3 border-bottom">
+                <div class="col-2 col-md-1">
+                    <img src="path/to/user-image.jpg" alt="User Image" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-10 col-md-11">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="mb-0">David Warner</h5>
+                        <div class="rating">
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                    <p class="text-muted">Stunning design, very dedicated crew who welcome new ideas suggested by customers, nice support.</p>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="col-xl-12 col-lg-12 col-sm-12 col-md-12">
+        <a routerLink="/courses-details-3">
+            <div class="pagination-area">
+                <div class="nav-links">
+                    <a routerLink="/courses-grid-2" class="prev page-numbers">prev</a>
+                    <span class="page-numbers current">1</span>
+                    <a routerLink="/courses-grid-2" class="page-numbers">2</a>
+                    <a routerLink="/courses-grid-2" class="page-numbers">3</a>
+                    <a routerLink="/courses-grid-2" class="next page-numbers">next</a>
+                </div>
+            </div>
+        </a>    
+    </div><br>
+
+    
 </div>

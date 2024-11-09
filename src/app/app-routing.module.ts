@@ -55,7 +55,7 @@ import { ZoomMeetingsDetailsPageComponent } from './components/pages/zoom-meetin
 import { ZoomMeetingsPageComponent } from './components/pages/zoom-meetings-page/zoom-meetings-page.component';
 import { BecomeAPartnerPageComponent } from './components/pages/become-a-partner-page/become-a-partner-page.component';
 import { QuestionBanksComponent } from './components/pages/question-banks/question-banks.component';
-
+import { ArticleDetailsComponent } from './components/pages/article-details/article-details.component';
 const routes: Routes = [
     {path: '', component: ElearningSchoolDemoComponent},
     {path: 'vendor-certification-etraining', component: VendorCertificationEtrainingDemoComponent},
@@ -111,6 +111,7 @@ const routes: Routes = [
     {path: 'blog-details', component: BlogDetailsPageComponent},
     {path: 'contact', component: ContactPageOneComponent},
     {path: 'contact-2', component: ContactPageTwoComponent},
+    {path : 'article-details' , component : ArticleDetailsComponent},
     // Here add new pages component
 
     {path: '**', component: NotFoundComponent} // This line will remain down from the whole pages component list
