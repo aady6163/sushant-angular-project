@@ -39,7 +39,7 @@
         display: block;
         font-weight: 500;
         margin-bottom: 10px;
-        color: var(--secondaryColor);
+        color: #08a9e6;
     }
     h2 {
         margin-bottom: 10px;
@@ -123,36 +123,8 @@
                 weight: 500;
             };
         }
-        .form-control {
-            transition: var(--transition);
-            border: 1px solid #f9f9f9;
-            background-color: #f9f9f9;
-            font-size: var(--fontSize);
-            color: var(--blackColor);
-            box-shadow: unset;
-            border-radius: 0;
-            height: 55px;
-            width: 100%;
-            padding: {
-                left: 15px;
-                right: 15px;
-            };
-            &::placeholder {
-                color: var(--paragraphColor);
-                transition: var(--transition);
-            }
-            &:focus {
-                border-color: var(--primaryColor);
-                
-                &::placeholder {
-                    color: transparent;
-                }
-            }
-        }
-        textarea.form-control {
-            height: auto !important;
-            padding-top: 15px;
-        }
+        
+       
     }
     .form-check {
         color: var(--paragraphColor);
@@ -291,10 +263,7 @@
             label {
                 font-size: 14px;
             }
-            .form-control {
-                height: 50px;
-                font-size: 14px;
-            }
+         
         }
         h2 {
             font-size: 26px;
@@ -379,10 +348,7 @@
         padding-right: 0;
 
         .form-group {
-            .form-control {
-                font-size: 15px;
-                height: 50px;
-            }
+            
             label {
                 font-size: 14px;
             }

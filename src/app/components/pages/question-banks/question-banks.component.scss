@@ -3,7 +3,19 @@
 .question-card {
   margin-top: 20px;
 }
-
+.default_btn,.default_reset_btn{
+  padding: 9px 22px;
+}
+.question_buttons_desktop .btn{
+  margin-left: 5px !important;
+}
+.time-left{
+  position: absolute;
+  right: 70px;
+}
+.legend .text-center{
+  margin-right: 20px;
+}
 .answer-box {
   min-height: 40px;
   background-color: #e9ecef;
@@ -113,10 +125,14 @@
         gap: 10px;
   
         .legend-item {
-          padding: 5px 10px;
+          padding: 0px !important;
           border-radius: 4px;
           font-size: 0.85rem;
           margin-left: 2px;
+          width: 20px;
+          height: 20px;
+          float: left;
+          // margin-right: 75px;
   
           &.submitted {
             background-color: #28a745;
@@ -176,7 +192,11 @@
   }
 }
   @media only screen and (max-width: 767px) {
-
+    .default_btn,.default_reset_btn{
+      padding: 9px 22px;
+      width: 96% !important;
+      margin-left: 0px;
+    }
     .question_buttons_desktop {
       display: none;
     }
@@ -280,7 +300,7 @@
   
     .legend-item {
       font-size: 0.75rem;
-      padding: 3px 6px;
+      padding: 0px !important;
     }
   
     .legend-item.submitted {

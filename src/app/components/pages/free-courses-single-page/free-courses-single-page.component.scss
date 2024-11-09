@@ -558,14 +558,17 @@
             img {
                 left: 0;
                 top: 20px;
-                width: 90px;
-                height: 90px;
-                border-radius: 5px;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
                 position: absolute;
             }
             .sub-comment {
                 margin-bottom: 8px;
                 font-weight: 700;
+                position: absolute;
+                left: 0px;
+                top: 66px;
             }
             .review-rating {
                 display: block;

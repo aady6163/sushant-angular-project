@@ -1,2 +1,22 @@
 @import "../../common/popular-courses/popular-courses.component.scss";
 @import "../../common/courses/courses.component.scss";
+.courses-area .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses-area .col-xl-3, .courses-area .col-lg-4, .courses-area .col-sm-6, .courses-area .col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-area .single-courses-item .front{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures spacing is even within the item */
+    min-height: 222px; /* Adjust this value as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for visual consistency */
+    border-radius: 8px;
+}
+

@@ -31,7 +31,7 @@ export class StickySidebarCoursesSinglePageComponent implements OnInit {
     },
     {
       title: '[3]: Most popular ERP vendors',
-      class: 'card-vendors',
+      class: 'card-benefits',
       items: [
         'SAP',
         'Oracle',
@@ -42,7 +42,7 @@ export class StickySidebarCoursesSinglePageComponent implements OnInit {
     },
     {
       title: '[4]: Common terminology',
-      class: 'card-terminology',
+      class: 'card-erp',
       items: [
         'ALE: Application Linking enabling',
         'IDOC: Intermediary documents',

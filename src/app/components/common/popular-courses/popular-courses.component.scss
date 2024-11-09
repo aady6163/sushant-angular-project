@@ -58,15 +58,15 @@
 .single-courses-item {
     position: relative;
     margin-bottom: 25px;
-    perspective: 1000px;
+    // perspective: 1000px;
 
     .front {
-        transition: transform .75s ease-in-out,-webkit-transform .75s ease-in-out;
+        // transition: transform .75s ease-in-out,-webkit-transform .75s ease-in-out;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         background-color: var(--whiteColor);
-        transform-style: preserve-3d;
+        // transform-style: preserve-3d;
         backface-visibility: hidden;
-        transform: rotateY(0deg);
+        // transform: rotateY(0deg);
         position: relative;
     
         .image {
@@ -93,7 +93,7 @@
                 color: var(--paragraphColor);
     
                 &:hover {
-                    color: var(--secondaryColor);
+                    color: #08a9e6;
                 }
             }
             .rating {
@@ -275,7 +275,7 @@
     }
     &:hover {
         .front {
-            transform: rotateY(180deg);
+            // transform: rotateY(180deg);
         }
         .back {
             transform: rotateY(0deg);

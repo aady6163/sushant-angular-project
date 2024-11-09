@@ -1,5 +1,5 @@
 <div class="quiz-container mt-5">
-  <span class="time-left">Time Left: <strong>19</strong></span>
+  <span class="time-left">Time Left: <strong>19:30</strong></span>
   <div class="header">
     <h3>JavaScript Quiz with Multiple Question Types</h3>
   </div>
@@ -80,8 +80,8 @@
     </ng-container>
 
     <div class="navigation-buttons mt-4">
-      <button class="btn btn-primary" (click)="submitAndNext()">Submit & Next</button>
-      <button class="btn btn-info btn-mar" (click)="markForReview()">Mark for Review & Next</button>
+      <button class="btn default_btn" (click)="submitAndNext()">Submit & Next</button>
+      <button class="btn default_reset_btn btn-mar" (click)="markForReview()">Mark for Review & Next</button>
       <button class="btn btn-secondary btn-mar" (click)="skipQuestion()">Skip</button>
     </div>
 
@@ -113,17 +113,30 @@
     </button>
 </div>
   
-  <div class="footer mt-3">
-
-    <div class="legend">
-      <span class="legend-item submitted bg-success text-white px-2 py-1 rounded">Submitted</span>
-      <span class="legend-item mark-review bg-warning text-white px-2 py-1 rounded">Marked for Review</span>
-      <span class="legend-item skip-question bg-danger text-white px-2 py-1 rounded">Skipped</span>
-      <span class="legend-item selected bg-secondary text-white px-2 py-1 rounded">Selected</span>
-      <span class="legend-item pending bg-light text-black px-2 py-1 rounded">Pending</span>
-    </div>
-
-
-    <button class="btn btn-warning mt-2" (click)="finishTest()">Finish Test</button>
+<div class="footer mt-3">
+  <button class="btn default_btn mt-2" (click)="finishTest()">Finish Test</button>
+  <div class="legend d-flex justify-content-around mt-2">
+      <div class="text-center">
+          <span class="legend-item bg-success"></span><br>
+          <div class="legend-title">Submitted</div>
+      </div>
+      <div class="text-center">
+          <span class="legend-item bg-warning"></span><br>
+          <div class="legend-title">Marked for Review</div>
+      </div>
+      <div class="text-center">
+          <span class="legend-item bg-danger"></span><br>
+          <div class="legend-title">Skipped </div>
+      </div>
+      <div class="text-center">
+          <span class="legend-item bg-secondary"></span><br>
+          <div class="legend-title">Selected</div>
+      </div>
+      <div class="text-center">
+          <span class="legend-item bg-light border border-dark"></span><br>
+          <div class="legend-title">Pending</div>
+      </div>
   </div>
+</div>
+
 </div>
