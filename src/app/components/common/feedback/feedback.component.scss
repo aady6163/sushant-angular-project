@@ -1,3 +1,44 @@
+.feedback-carousel {
+    .single-feedback-box {
+        transition: var(--transition);
+        background-color: #f9f9f9;
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+        padding: 30px;
+        margin: 15px;
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+
+            .info {
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+                span {
+                    font-size: 14px;
+                    color: #777;
+                }
+            }
+        }
+    }
+}
+
+
 .feedback-area {
     position: relative;
     z-index: 1;

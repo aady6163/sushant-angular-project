@@ -1,4 +1,10 @@
 
+@media only screen and (min-width: 1200px){
+  .quiz-container {
+    width: 75%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
 .question-card {
   margin-top: 20px;
@@ -11,7 +17,7 @@
 }
 .time-left{
   position: absolute;
-  right: 70px;
+  right: 14%;
 }
 .legend .text-center{
   margin-right: 20px;
@@ -38,7 +44,7 @@
 
 
 .quiz-container {
-    width: 95%;
+    width: 75%;
     margin: 50px auto;
     padding: 20px;
     background-color: #f8f9fa;
